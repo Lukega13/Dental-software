@@ -88,33 +88,41 @@ nav ul li a {
     height: 553px;
     box-sizing: border-box;
     padding: 0 50px;
+    display: grid;
+    grid-template-columns: 750px 400px;
+    grid-template-rows: 350px 150px;
+    justify-content: space-between;
+    align-content: space-evenly;
 }
 #first-panel {
     width: 750px;
     height: 350px;
     background-color: grey;
-    float: left;
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
 #second-panel {
     width: 400px;
     height: 350px;
     background-color: black;
-    float: right; /*ou colocar margin-left: 145px;*/
+    grid-row-start: 1;
+    grid-column-start: 2;
 }
 #third-panel {
     width: 750px;
     height: 150px;
     background-color: grey;
-    float: left;
-    margin: 26px 0;
+    grid-row-start: 2;
+    grid-column-start: 1;
 }
 #fourth-panel {
     width: 400px;
     height: 150px;
     background-color: black;
     display: flex;
-    float: right; /*ou colocar margin-left: 145px;*/
-    margin: 26px 0;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
 
 
