@@ -44,7 +44,7 @@ nav ul {
     text-align: center;
     justify-content: space-around;
     display: flex;
-    width: 100%;
+    width: 50%;
 }
 nav ul li {
     list-style: none;
@@ -66,9 +66,9 @@ nav ul li a {
 }
 #icones{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 46%;
+    width: 25%;
 }
 #icone-perfil{
     display: flex;
