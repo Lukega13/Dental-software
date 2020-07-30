@@ -1,10 +1,26 @@
 html, body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
 }
+ul {
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+@media screen and (min-width:1700px){
+    header {
+        padding: 0 2% !important;
+    }
+}
+@media screen and (max-width:1200px){
+    #icones-header {
+        width: 11% !important;
+    }
+}
+
+ARRUMAR O PAINEL COM O @MEDIA
 
 /*Index.html*/
 #authentication {
@@ -27,6 +43,10 @@ html, body {
 header {
     background-color: black;
     height: 12vh;
+    width: 100%;
+    padding: 0 1%;
+    box-sizing: border-box;
+    min-height: 72px;
 }
 .home-page a{
     color: rgba(72, 128, 211, 0.938) !important;
@@ -35,16 +55,18 @@ nav ul li a:hover {
     color: rgba(72, 128, 211, 0.938) !important;
 }
 nav {
-    display: flex;
+    display: inline-flex;
     height: 100%;
-    width: 100%;
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
 }
 nav ul {
     align-items: center;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 nav ul li {
     list-style: none;
@@ -59,16 +81,18 @@ nav ul li a {
     line-height: 35px;
 }
 #icones-header{
-    justify-content: flex-end;
-    width: 50%;
+    justify-content: center;
+    width: 9%;
+    float: right;
     align-items: center;
-    display: flex;
+    display: inline-flex;
+    height: 100%;
 }
 #icones{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 25%;
+    width: 100%;
 }
 #icone-perfil{
     display: flex;
@@ -86,45 +110,38 @@ nav ul li a {
 
 
 #paineis {
-    background-color: green;
+    background-color: rgb(175, 214, 226);
     height: 88vh;
     box-sizing: border-box;
+    width: 100%;
+    position: relative;
     padding: 0 50px;
-    display: grid;
-    grid-template-columns: 750px 400px;
-    grid-template-rows: 350px 150px;
-    justify-content: space-between;
-    align-content: space-evenly;
+    min-height: 500px !important;
 }
 #first-panel {
-    width: 750px;
-    height: 350px;
-    background-color: grey;
-    grid-row-start: 1;
-    grid-column-start: 1;
+    width: 60%;
+    height: 64%;
+    background-color: white;
+    float: left;
 }
 #second-panel {
-    width: 400px;
-    height: 350px;
-    background-color: black;
-    grid-row-start: 1;
-    grid-column-start: 2;
+    width: 32%;
+    height: 64%;
+    background-color: white;
+    float: right;
 }
 #third-panel {
-    width: 750px;
+    width: 60%;
     height: 150px;
-    background-color: grey;
-    grid-row-start: 2;
-    grid-column-start: 1;
+    background-color: white;
+    margin: 26px 0;
+    float: left;
 }
 #fourth-panel {
-    width: 400px;
+    width: 32%;
     height: 150px;
-    background-color: black;
+    background-color: white;
     display: flex;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    margin: 26px 0;
+    float: right;
 }
-
-
