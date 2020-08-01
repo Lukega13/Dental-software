@@ -290,11 +290,8 @@ background-color: grey;
     cursor: pointer;
     display: block;
     width: 50%;
-    height: 6vh;
+    height: 7vh;
     line-height: 48px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
     border: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -314,13 +311,13 @@ background-color: grey;
 /*Teste 7 dias grátis*/
 #teste-gratis-index {
     grid-area: teste;
-    background-color: #20B2AA;
     box-sizing: border-box;
     display: flex;
     justify-content: right;
     box-sizing: border-box;
 }
-#conteudo-teste-index{
+
+#texto-teste-index{
     flex-direction: column;
     height: 100%;
     justify-content: center;
@@ -399,7 +396,7 @@ background-color: grey;
     #button-registrar-index, #button-teste-index {
         font-size: 20px !important;
         padding: 0 0 0 30px !important;
-        height: 6vh;
+        height: 7vh;
         width: 60%;
     }
     #logar-index{
@@ -471,7 +468,7 @@ background-color: grey;
     #button-registrar-index, #button-teste-index {
         font-size: 16px !important;
         padding: 0 0 0 30px !important;
-        height: 6vh;
+        height: 7vh;
     }
     #logar-index{
         height: 6vh;
@@ -493,7 +490,7 @@ background-color: grey;
         padding: 0 0 0 0 !important;
     }
     #conteudo-login-index{
-        width: 60% !important;
+        width: 55% !important;
     }
 }
 
@@ -502,7 +499,7 @@ background-color: grey;
         padding: 0 0 0 0 !important;
     }
     #conteudo-login-index{
-        width: 65% !important;
+        width: 60% !important;
     }
     h1{
         font-size: 22px !important;
