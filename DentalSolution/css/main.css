@@ -10,4 +10,378 @@ ul {
     margin: 0 !important; 
 }
 
+@media screen and (min-width:1920px){
+    #icones-header {
+        width: 7% !important;
+    }
+    nav ul li {
+        font-size: 20px !important;
+    }
+    #header_home-page {
+        padding: 0 3% !important;
+    }
+}
+
+@media screen and (min-width:1600px) and (max-width: 1920px){
+    #icones-header {
+        width: 8% !important;
+    }
+    nav ul li {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width:1200px){
+    #icones-header {
+        width: 12% !important;
+    }
+    nav {
+        width: 68% !important;
+    }
+    #paineis-superiores {
+        height: 55% !important;
+    }
+    #paineis-inferiores {
+        height: 45% !important;
+    }
+}
+
+
+/*home-page.html*/
+#header_home-page {
+    background-color: white;
+    height: 12vh;
+    width: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
+    min-height: 72px;
+}
+.home-page a{
+    color: rgba(72, 128, 211, 0.938) !important;
+}
+nav ul li a:hover {
+    color: rgba(72, 128, 211, 0.938) !important;
+}
+nav {
+    display: inline-flex;
+    height: 100%;
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+}
+nav ul {
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    line-height: 35px;
+}
+#icones-header{
+    justify-content: center;
+    width: 9%;
+    float: right;
+    align-items: center;
+    display: inline-flex;
+    height: 100%;
+}
+#icones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#icone-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#nome-icone-perfil {
+    color: black;
+    display: block;
+}
+.mini-icons {
+    margin-right: 5px;
+}
+
+#paineis {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 88vh;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(175, 214, 226);;
+    padding: 3% 0;
+    box-sizing: border-box;
+    min-height: 500px;
+}
+#paineis-superiores {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 60%;
+    align-items: flex-start;
+}
+#first-panel {
+    width: 55%;
+    height: 100%;
+    background-color: black;
+}
+#second-panel {
+    width: 30%;
+    height: 100%;
+    background-color: grey;
+}
+
+#paineis-inferiores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    height: 40%;
+}
+#third-panel {
+width: 55%;
+height: 70%;
+background-color: black;
+}
+#fourth-panel {
+width: 30%;
+height: 70%;
+background-color: grey;
+}
+
 /*Index.html*/
+#container {
+    display: grid;
+    grid-template-areas: 'login registre' 'login registre';
+    grid-template-rows: 50vh 50vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+/*Login*/
+#logo-index{
+    width: 100%;
+    height: 14vh;
+    background-image: url(../img/face-48.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    box-sizing: border-box;
+}
+#login-index {
+    grid-area: login;
+    background-color: white;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.5)), to rgba(40, 63, 97, 0.5) to rgba(0, 0, 0, 0.5)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(rgba(0, 0, 0, 0.5) , rgba(40, 63, 97, 0.5), rgba(0, 0, 0, 0.5)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(rgba(0, 0, 0, 0.5) , rgba(40, 63, 97, 0.5), rgba(0, 0, 0, 0.5)) 1 100%; 
+    -o-border-image:
+      -o-linear-gradient(rgba(0, 0, 0, 0.5) , rgba(40, 63, 97, 0.5), rgba(0, 0, 0, 0.5)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5) , rgba(40, 63, 97, 0.5), rgba(0, 0, 0, 0.5)) 1 100%;
+}
+#conteudo-login-index {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+}
+#texto-login-index {
+    margin-bottom: 4vh;
+}
+#texto-login-index h3{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+#texto-login-index h5{
+    font-size: 18px;
+    margin: 0;
+}
+#formulario {
+    width: 100%;
+}
+#email {
+    height: 6vh;
+    width: 100%;
+    font-family: cursive;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #c6c1ff;
+    border-right: none;
+    margin: 0 0 6vh 0;
+    box-shadow: none !important
+}
+#senha {
+    height: 6vh;
+    width: 100%;
+    font-family: cursive;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #c6c1ff;
+    border-right: none;
+    margin: 0 0 6vh 0;
+    box-shadow: none !important
+}
+
+#esqueci-email-index {
+    margin: 0 0 2vh 0;
+}
+#esqueci-email-index a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+#esqueci-senha-index a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+#logar-index {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 7vh;
+    line-height: 48px;
+    margin: 0 0 4vh 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    line-height: 0;
+    background-color: rgba(64, 136, 246, 1);
+}
+#logar-index:hover {
+    background-color: rgba(22, 74, 154, 0.8);
+    color: white;
+}
+
+/*Cadastro*/
+#registre-index {
+    grid-area: registre;
+    background-color: #20B2AA;
+    width: 50vw;
+    display: flex;
+    justify-content: right;
+    box-sizing: border-box;
+}
+#conteudo-registre-index {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 3vh 0 0 7vw;
+    box-sizing: border-box;
+}
+#texto-registre-index h1 {
+    font-size: 14px;
+    color:  rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+#texto-registre-index h3 {
+    font-size: 20px;
+    color:  white;
+    margin: 4vh 0 7vh 0;
+}
+
+#button-registrar-index, #button-teste-index{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(64, 136, 246, 1);
+    text-align: left;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    display: block;
+    width: 55%;
+    height: 7vh;
+    line-height: 48px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    line-height: 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#button-registrar-index:hover, #button-teste-index:hover{
+    background-color: rgba(64, 136, 246, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+/*Teste 7 dias grátis*/
+#teste-gratis-index {
+    grid-area: teste;
+    background-color: #20B2AA;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    box-sizing: border-box;
+}
+#conteudo-teste-index{
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+}
+#texto-teste-index h3{
+    font-size: 20px;
+    color:  white;
+    margin: 0 0 4vh 0;
+}
+
+
+#borda-index {
+    width: 100%;
+    max-width: 400px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 30px 0;
+    box-sizing: border-box;
+}
