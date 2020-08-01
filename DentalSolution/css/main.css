@@ -10,42 +10,6 @@ ul {
     margin: 0 !important; 
 }
 
-@media screen and (min-width:1920px){
-    #icones-header {
-        width: 7% !important;
-    }
-    nav ul li {
-        font-size: 20px !important;
-    }
-    #header_home-page {
-        padding: 0 3% !important;
-    }
-}
-
-@media screen and (min-width:1600px) and (max-width: 1920px){
-    #icones-header {
-        width: 8% !important;
-    }
-    nav ul li {
-        font-size: 20px !important;
-    }
-}
-
-@media screen and (max-width:1200px){
-    #icones-header {
-        width: 12% !important;
-    }
-    nav {
-        width: 68% !important;
-    }
-    #paineis-superiores {
-        height: 55% !important;
-    }
-    #paineis-inferiores {
-        height: 45% !important;
-    }
-}
-
 
 /*home-page.html*/
 #header_home-page {
@@ -177,10 +141,10 @@ background-color: grey;
 /*Login*/
 #logo-index{
     width: 100%;
-    height: 14vh;
+    height: 10vh;
     background-image: url(../img/face-48.png);
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: top center;
     box-sizing: border-box;
 }
 #login-index {
@@ -211,38 +175,27 @@ background-color: grey;
     height: 100%;
     justify-content: center;
     display: flex;
-    width: 50%;
+    width: 55%;
 }
 #texto-login-index {
     margin-bottom: 4vh;
 }
-#texto-login-index h3{
-    font-size: 20px;
+#texto-login-index h1{
+    font-size: 24px;
     margin: 0;
     margin-bottom: 5px;
 }
-#texto-login-index h5{
+#texto-login-index h2{
     font-size: 18px;
     margin: 0;
 }
 #formulario {
     width: 100%;
 }
-#email {
+#email, #senha {
     height: 6vh;
     width: 100%;
-    font-family: cursive;
-    border-left: none;
-    border-top: none;
-    border-bottom: 1px solid #c6c1ff;
-    border-right: none;
-    margin: 0 0 6vh 0;
-    box-shadow: none !important
-}
-#senha {
-    height: 6vh;
-    width: 100%;
-    font-family: cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-left: none;
     border-top: none;
     border-bottom: 1px solid #c6c1ff;
@@ -269,7 +222,7 @@ background-color: grey;
 
 #logar-index {
     font-family: Roboto, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -278,7 +231,7 @@ background-color: grey;
     cursor: pointer;
     display: block;
     width: 100%;
-    height: 7vh;
+    height: 6vh;
     line-height: 48px;
     margin: 0 0 4vh 0;
     -moz-border-radius: 3px;
@@ -296,13 +249,14 @@ background-color: grey;
     color: white;
 }
 
+
 /*Cadastro*/
 #registre-index {
     grid-area: registre;
     background-color: #20B2AA;
     width: 50vw;
     display: flex;
-    justify-content: right;
+    justify-content: space-evenly;
     box-sizing: border-box;
 }
 #conteudo-registre-index {
@@ -310,23 +264,23 @@ background-color: grey;
     height: 100%;
     justify-content: center;
     display: flex;
-    padding: 3vh 0 0 9vw;
+    padding: 0 6vw 0 0;
     box-sizing: border-box;
 }
-#texto-registre-index h1 {
-    font-size: 14px;
+#texto-registre-index h3 {
+    font-size: 16px;
     color:  rgba(255, 255, 255, 0.8);
     margin: 0;
 }
-#texto-registre-index h3 {
-    font-size: 20px;
+#texto-registre-index h4 {
+    font-size: 24px;
     color:  white;
-    margin: 4vh 0 7vh 0;
+    margin: 6% 0 10% 0;
 }
 
 #button-registrar-index, #button-teste-index{
     font-family: Roboto, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -335,8 +289,8 @@ background-color: grey;
     padding: 0 0 0 30px;
     cursor: pointer;
     display: block;
-    width: 55%;
-    height: 7vh;
+    width: 50%;
+    height: 6vh;
     line-height: 48px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -354,6 +308,9 @@ background-color: grey;
     color: rgba(255, 255, 255, 1);
 }
 
+
+
+
 /*Teste 7 dias grátis*/
 #teste-gratis-index {
     grid-area: teste;
@@ -370,10 +327,10 @@ background-color: grey;
     display: flex;
     box-sizing: border-box;
 }
-#texto-teste-index h3{
-    font-size: 20px;
+#texto-teste-index h4{
+    font-size: 24px;
     color:  white;
-    margin: 0 0 4vh 0;
+    margin: 0 0 10% 0;
 }
 
 
@@ -384,4 +341,207 @@ background-color: grey;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 30px 0;
     box-sizing: border-box;
+}
+
+
+/*Responsividade Home-Page*/
+@media screen and (min-width:1920px){
+    #icones-header {
+        width: 7% !important;
+    }
+    nav ul li {
+        font-size: 20px !important;
+    }
+    #header_home-page {
+        padding: 0 3% !important;
+    }
+}
+
+@media screen and (min-width:1600px) and (max-width: 1920px){
+    #icones-header {
+        width: 8% !important;
+    }
+    nav ul li {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width:1200px){
+    #icones-header {
+        width: 12% !important;
+    }
+    nav {
+        width: 68% !important;
+    }
+    #paineis-superiores {
+        height: 55% !important;
+    }
+    #paineis-inferiores {
+        height: 45% !important;
+    }
+}
+
+
+/*Responsividade Index*/
+@media screen and (min-width:2000px){
+    h1{
+        font-size: 28px !important;
+    }
+    h2{
+        font-size: 22px !important;
+    }
+    h3{
+        font-size: 22px !important;
+    }
+    h4 {
+        font-size: 28px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 20px !important;
+        padding: 0 0 0 30px !important;
+        height: 6vh;
+        width: 60%;
+    }
+    #logar-index{
+        height: 6vh;
+        font-size: 20px;
+    }
+    #email, #senha{
+        font-size: 18px;
+    }
+    #borda-index{
+        margin: 40px 0 !important;
+    }
+    #conteudo-login-index{
+        width: 50%;
+    }
+    #esqueci-email-index a, #esqueci-senha-index a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1920px) and (max-width:2000px){
+    h1{
+        font-size: 28px !important;
+    }
+    h2{
+        font-size: 22px !important;
+    }
+    #logar-index{
+        height: 6vh;
+        font-size: 20px;
+    }
+    #email, #senha{
+        font-size: 18px;
+    }
+    #conteudo-login-index{
+        width: 50%;
+    }
+    #esqueci-email-index a, #esqueci-senha-index a{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    h4 {
+        font-size: 26px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 18px !important;
+        padding: 0 0 0 30px !important;
+    }
+    #borda-index{
+        margin: 35px 0 !important;
+    }
+}
+
+@media screen and (min-width:1500px) and (max-width:1919px){
+    h1{
+        font-size: 24px !important;
+    }
+    h2{
+        font-size: 18px !important;
+    }
+    h3{
+        font-size: 18px !important;
+    }
+    h4 {
+        font-size: 24px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 16px !important;
+        padding: 0 0 0 30px !important;
+        height: 6vh;
+    }
+    #logar-index{
+        height: 6vh;
+        font-size: 16px;
+    }
+    #email, #senha{
+        font-size: 16px;
+    }
+    #borda-index{
+        margin: 35px 0 !important;
+    }
+    #esqueci-email-index a, #esqueci-senha-index a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1500px){
+    #conteudo-registre-index{
+        padding: 0 0 0 0 !important;
+    }
+    #conteudo-login-index{
+        width: 60% !important;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px){
+    #conteudo-registre-index{
+        padding: 0 0 0 0 !important;
+    }
+    #conteudo-login-index{
+        width: 65% !important;
+    }
+    h1{
+        font-size: 22px !important;
+    }
+    h2{
+        font-size: 16px !important;
+    }
+    h3{
+        font-size: 14px !important;
+    }
+    h4 {
+        font-size: 20px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 14px !important;
+        padding: 0 0 0 25px !important;
+    }
+}
+@media screen and (min-width:840px) and (max-width:1024px){
+    #conteudo-registre-index{
+        padding: 0 0 0 0 !important;
+    }
+    h1{
+        font-size: 22px !important;
+    }
+    h2{
+        font-size: 15px !important;
+    }
+    h3{
+        font-size: 12px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 12px !important;
+        padding: 0 0 0 20px !important;
+    }
+}
+@media screen and (min-width:100px) and (max-width:840px){
+/*Fazer o app mobile*/
 }
