@@ -1,0 +1,106 @@
+Definições Gerais
+- Cores do app
+- Imagens usadas
+- Textos
+
+
+Site Desktop e Mobile
+> Fotos para o Carousel de Apresentação
+
+> Vídeo de demonstração de uso do App
+
+> Fotos do app e textos de qualidades/funcionalidades do app
+
+> Relatos de dentistas
+
+> Skin in the Game (Criador é dentista - eu)
+
+> Preços
+
+> Formulário para contato
+
+> Perguntas Frequentes
+
+> Login
+
+> Registro
+
+
+APP Desktop e Mobile
+> Página de Login (redirect Home-Page) - Index.html
+
+
+> Página de Registro (redirect Compra)
+- Dados do Dentista (Nome, foto, telefone, e-mail, CRO, endereço, senha e usuário)
+- Clínica (Opcional - Nome, e-mail profissional, telefone, endereço)
+- Equipe (Opcional - Nomes, profissões)
+
+
+> Página de Compra (redirect Login)
+- Escolha do plano
+- Forma de pagamento
+
+
+> Home-page (Dashboard do app) - home_page.html
+
+
+> Funcionalidades
+- Agenda: Ano, mês e semana
+
+- Pacientes: Lista de Pacientes (Cadastras e Barra de Busca)
+             Pacientes do dia (Pega os pacientes marcados na agenda)
+
+Página de cada paciente: Dados gerais e Anamnese
+                         Exames
+                         Radiografias e Imagens (Ver se vai ter tamanho máximo para o armazenamento das fotos)
+                         Orçamento (Diagnóstico, Tratamento proposto, nº de consultas, Preço, declaração)
+                         Histórico de Consultas
+
+- Prescrição: Alteração de estilos
+              Dar opção para salvar prescrições já feitas
+              Criar prescrições genéricas só com medicamentos e dose e na hora só colocar o nome do paciente
+
+- Mensagens: Mensagem personalizada
+             Alerta de retorno
+             Créditos (SMS)
+
+- Finanças (Senha): Ticket médio (Por consulta, dia e mês)
+                    Contas a pagar
+                    Contas a receber
+                    Gastos e despesas
+                    Comissões
+
+- Relatórios (Senha): Financeiro (DRE trimestral, semestral e anual)
+                      Consultas (Número de consultas no mês, ticket médio por consulta)
+                      Pacientes (Número de pacientes, idade média, % sexo)
+                      Procedimentos (Mais realizados, quantidade de cada)
+
+- Laboratórios (?)
+
+- Histórico: Mostra o histórico de alterações no app por todos da equipe
+
+
+> Perfil e Configurações do App
+- Meu Perfil: Foto, Nome Completo, CRO, Telefone, E-mail, Cidade, Estado, País, Alterar Senha e Usuário
+
+- Equipe: Profissões e Nomes de cada um, Telefone, E-mail, Cadastrar e Excluir Profissionais
+
+- Acesso: O que cada profissional da equipe pode ter acesso nas Funcionalidades
+          Senhas (Quais funcionalidades tem senha e quais não terão)
+
+- Consultório(?): Nome da Clínica, E-mail profissional (Contratar), Marketing (Contratar), Telefone Clínica,
+Localização da Clínica, Profissionais e suas especializações, Texto (Descrição da Clínica)
+
+- Dark mode (?)
+
+
+> Ajuda e Notificações
+- Manual de uso do App
+- Notificações sobre atualizações, etc
+
+
+> Configurações para cada dispositivo
+Quando o usuário abrir o app pela primeira vez aparece uma caixa para configuração:
+- "Quem utilizará esse dispositivo?"
+  (Input de resposta com: Dentista(Nome do Usuário), Secretária(Nome se já cadastrado), Cadastrar)
+  Cadastrar: Nome, Profissão
