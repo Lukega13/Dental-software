@@ -1,34 +1,33 @@
+Lista geral
+- Página de Registro
+- Arrumar a Home Page
+- Site do App
+- Perfil e Configurações do App
+- Começar funcionalidades
+
+
 Definições Gerais
-- Cores do app
+- Cores do app: 
 - Imagens usadas
 - Textos
+- Responsividade
 
 
 Site Desktop e Mobile
 > Fotos para o Carousel de Apresentação
-
 > Vídeo de demonstração de uso do App
-
 > Fotos do app e textos de qualidades/funcionalidades do app
-
 > Relatos de dentistas
-
 > Skin in the Game (Criador é dentista - eu)
-
 > Preços
-
 > Formulário para contato
-
 > Perguntas Frequentes
-
 > Login
-
 > Registro
 
 
 APP Desktop e Mobile
-> Página de Login (redirect Home-Page) - Index.html
-
+<Página de Login (redirect Home-Page) - Index.html>
 
 > Página de Registro (redirect Compra)
 - Dados do Dentista (Nome, foto, telefone, e-mail, CRO, endereço, senha e usuário)
@@ -40,9 +39,7 @@ APP Desktop e Mobile
 - Escolha do plano
 - Forma de pagamento
 
-
-> Home-page (Dashboard do app) - home_page.html
-
+<Home-page (Dashboard do app) - home_page.html>
 
 > Funcionalidades
 - Agenda: Ano, mês e semana
