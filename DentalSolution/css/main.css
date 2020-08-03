@@ -280,13 +280,13 @@ background-color: grey;
 
 #button-registrar-index, #button-teste-index{
     font-family: Roboto, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: rgba(64, 136, 246, 1);
     text-align: left;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 25px;
     cursor: pointer;
     display: block;
     width: 50%;
@@ -467,7 +467,7 @@ background-color: grey;
     }
     #button-registrar-index, #button-teste-index {
         font-size: 16px !important;
-        padding: 0 0 0 30px !important;
+        padding: 0 0 0 25px !important;
         height: 7vh;
     }
     #logar-index{
