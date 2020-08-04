@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>DentalSolution</title>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -21,11 +22,17 @@
                 </div>
 
                 <div id="form-login-index">
-                    <input type="email" maxlength="40" name="email" id="email" required placeholder="Digite seu Email">
+                    <form>
+                        <span id="tittle-email">E-mail</span>
+                        <input type="email" maxlength="40" name="email" id="email" required autofocus
+                            placeholder="Digite seu Email" onfocus="acionarEmail()" onblur="fillEmail()">
 
-                    <input type="password" name="senha" id="senha" required placeholder="Digite sua senha">
+                        <span id="tittle-senha">Senha</span>
+                        <input type="password" name="senha" id="senha" required placeholder="Digite sua senha"
+                            onfocus="acionarSenha()" onblur="fillSenha()">
 
-                    <input type="submit" value="Fazer login" id="logar-index">
+                        <input type="submit" value="Fazer login" id="logar-index">
+                    </form>
                 </div>
 
                 <div id="esqueci-email-index">
