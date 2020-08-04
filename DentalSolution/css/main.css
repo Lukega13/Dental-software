@@ -228,7 +228,7 @@ background-color: grey;
 #formulario {
     width: 100%;
 }
-#email {
+#email, #senha {
     height: 6vh;
     width: 100%;
     font-family: cursive;
@@ -237,19 +237,10 @@ background-color: grey;
     border-bottom: 1px solid #c6c1ff;
     border-right: none;
     margin: 0 0 5vh 0;
-    box-shadow: none !important
+    padding: 0;
+    box-shadow: none !important;
 }
-#senha {
-    height: 6vh;
-    width: 100%;
-    font-family: cursive;
-    border-left: none;
-    border-top: none;
-    border-bottom: 1px solid #c6c1ff;
-    border-right: none;
-    margin: 0 0 6vh 0;
-    box-shadow: none !important
-}
+
 input:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
