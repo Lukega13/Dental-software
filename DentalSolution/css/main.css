@@ -201,8 +201,10 @@ background-color: grey;
     border-bottom: 1px solid #c6c1ff;
     border-right: none;
     margin: 0 0 5vh 0;
-    box-shadow: none !important
+    padding: 0;
+    box-shadow: none !important;
 }
+
 input:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
