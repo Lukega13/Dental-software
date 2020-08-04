@@ -236,7 +236,7 @@ background-color: grey;
     border-top: none;
     border-bottom: 1px solid #c6c1ff;
     border-right: none;
-    margin: 0 0 6vh 0;
+    margin: 0 0 5vh 0;
     box-shadow: none !important
 }
 #senha {
@@ -250,6 +250,44 @@ background-color: grey;
     margin: 0 0 6vh 0;
     box-shadow: none !important
 }
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+.input-acionado {
+    border-bottom: 1px solid blue !important;
+}
+.erro-input {
+    border-bottom: 1px solid red !important;
+}
+
+/*Tittle-Email*/
+#tittle-email {
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.tittle-email-active {
+    color: blue !important;
+}
+.tittle-email-error {
+    color: red !important;
+}
+
+/*Tittle-Senha*/
+#tittle-senha {
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.tittle-senha-active {
+    color: blue !important;
+}
+.tittle-senha-error {
+    color: red !important;
+}
+
 
 #esqueci-email-index {
     margin: 0 0 2vh 0;
