@@ -86,7 +86,7 @@ nav ul li a {
     height: 88vh;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(175, 214, 226);;
+    background-color: rgb(175, 214, 226);
     padding: 3% 0;
     box-sizing: border-box;
     min-height: 500px;
@@ -141,10 +141,10 @@ background-color: grey;
 /*Login*/
 #logo-index{
     width: 100%;
-    height: 10vh;
+    height: 14vh;
     background-image: url(../img/face-48.png);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top left;
     box-sizing: border-box;
 }
 #login-index {
@@ -175,18 +175,18 @@ background-color: grey;
     height: 100%;
     justify-content: center;
     display: flex;
-    width: 55%;
+    width: 50%;
 }
 #texto-login-index {
     margin-bottom: 4vh;
 }
 #texto-login-index h1{
-    font-size: 24px;
+    font-size: 22px;
     margin: 0;
     margin-bottom: 5px;
 }
 #texto-login-index h2{
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
 }
 #formulario {
@@ -262,7 +262,7 @@ input:focus {
 
 #logar-index {
     font-family: Roboto, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -271,7 +271,7 @@ input:focus {
     cursor: pointer;
     display: block;
     width: 100%;
-    height: 6vh;
+    height: 7vh;
     line-height: 48px;
     margin: 0 0 4vh 0;
     -moz-border-radius: 3px;
@@ -296,7 +296,7 @@ input:focus {
     background-color: #20B2AA;
     width: 50vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
     box-sizing: border-box;
 }
 #conteudo-registre-index {
@@ -304,34 +304,37 @@ input:focus {
     height: 100%;
     justify-content: center;
     display: flex;
-    padding: 0 6vw 0 0;
+    padding: 3vh 0 0 7vw;
     box-sizing: border-box;
 }
 #texto-registre-index h3 {
-    font-size: 16px;
+    font-size: 14px;
     color:  rgba(255, 255, 255, 0.8);
     margin: 0;
 }
 #texto-registre-index h4 {
-    font-size: 22px;
+    font-size: 20px;
     color:  white;
-    margin: 6% 0 10% 0;
+    margin: 4vh 0 7vh 0;
 }
 
 #button-registrar-index, #button-teste-index{
     font-family: Roboto, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: rgba(64, 136, 246, 1);
     text-align: left;
-    padding: 0 0 0 25px;
+    padding: 0 0 0 30px;
     cursor: pointer;
     display: block;
-    width: 50%;
+    width: 55%;
     height: 7vh;
     line-height: 48px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
     border: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -365,7 +368,7 @@ input:focus {
     box-sizing: border-box;
 }
 #texto-teste-index h4{
-    font-size: 22px;
+    font-size: 20px;
     color:  white;
     margin: 0 0 10% 0;
 }
@@ -428,7 +431,7 @@ input:focus {
         font-size: 22px !important;
     }
     h3{
-        font-size: 22px !important;
+        font-size: 20px !important;
     }
     h4 {
         font-size: 28px !important;
@@ -436,21 +439,16 @@ input:focus {
     #button-registrar-index, #button-teste-index {
         font-size: 20px !important;
         padding: 0 0 0 30px !important;
-        height: 7vh;
-        width: 60%;
+        width: 60% !important;
     }
     #logar-index{
-        height: 6vh;
         font-size: 20px;
     }
     #email, #senha{
         font-size: 18px;
     }
     #borda-index{
-        margin: 40px 0 !important;
-    }
-    #conteudo-login-index{
-        width: 50%;
+        margin: 45px 0 !important;
     }
     #esqueci-email-index a, #esqueci-senha-index a{
         font-size: 18px;
@@ -459,26 +457,22 @@ input:focus {
 
 @media screen and (min-width:1920px) and (max-width:2000px){
     h1{
-        font-size: 28px !important;
+        font-size: 26px !important;
     }
     h2{
-        font-size: 22px !important;
+        font-size: 20px !important;
     }
     #logar-index{
-        height: 6vh;
-        font-size: 20px;
+        font-size: 20px !important;
     }
     #email, #senha{
-        font-size: 18px;
-    }
-    #conteudo-login-index{
-        width: 50%;
+        font-size: 18px !important;
     }
     #esqueci-email-index a, #esqueci-senha-index a{
-        font-size: 18px;
+        font-size: 18px !important;
     }
     h3{
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
     h4 {
         font-size: 26px !important;
@@ -488,7 +482,7 @@ input:focus {
         padding: 0 0 0 30px !important;
     }
     #borda-index{
-        margin: 35px 0 !important;
+        margin: 40px 0 !important;
     }
 }
 
@@ -500,7 +494,7 @@ input:focus {
         font-size: 18px !important;
     }
     h3{
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     h4 {
         font-size: 24px !important;
@@ -508,10 +502,8 @@ input:focus {
     #button-registrar-index, #button-teste-index {
         font-size: 16px !important;
         padding: 0 0 0 25px !important;
-        height: 7vh;
     }
     #logar-index{
-        height: 6vh;
         font-size: 16px;
     }
     #email, #senha{
@@ -526,26 +518,14 @@ input:focus {
 }
 
 @media screen and (min-width:1201px) and (max-width:1500px){
-    #conteudo-registre-index{
-        padding: 0 0 0 0 !important;
-    }
     #conteudo-login-index{
-        width: 55% !important;
+        width: 50% !important;
     }
 }
 
 @media screen and (min-width:1024px) and (max-width:1200px){
-    #conteudo-registre-index{
-        padding: 0 0 0 0 !important;
-    }
     #conteudo-login-index{
-        width: 60% !important;
-    }
-    h1{
-        font-size: 22px !important;
-    }
-    h2{
-        font-size: 16px !important;
+        width: 55% !important;
     }
     h3{
         font-size: 14px !important;
@@ -559,8 +539,8 @@ input:focus {
     }
 }
 @media screen and (min-width:840px) and (max-width:1024px){
-    #conteudo-registre-index{
-        padding: 0 0 0 0 !important;
+    #conteudo-login-index{
+        width: 60% !important;
     }
     h1{
         font-size: 22px !important;
@@ -572,11 +552,15 @@ input:focus {
         font-size: 12px !important;
     }
     h4 {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     #button-registrar-index, #button-teste-index {
         font-size: 12px !important;
         padding: 0 0 0 20px !important;
+        height: 6vh !important;
+    }
+    #logar-index {
+        height: 6vh !important;
     }
 }
 @media screen and (min-width:100px) and (max-width:840px){
