@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>DentalSolution</title>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
     <header id="header_home-page">
+
+        <aside>
+
+            <div id="Sidebar" class="Barra-Lateral" style="display: none; z-index: 5;">
+                <button class="bar-item" onclick="sidebar_close()">Close &times;</button>
+                <a href="" class="bar-item">Link 1</a>
+                <a href="" class="bar-item">Link 2</a>
+                <a href="" class="bar-item">Link 3</a>
+            </div>
+
+            <!--Lateral da barra ativa-->
+            <div class="w3-overlay w3-animate-opacity" onclick="sidebar_close()" style="cursor:pointer" id="Overlay"></div>
+          
+            <div id="botao">
+                <button class="bar-button" onclick="sidebar_open()">&#9776;</button>
+            </div>
+
+        </aside>
+
         <nav>
             <ul>
                 <li class="home-page">
