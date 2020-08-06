@@ -12,47 +12,138 @@
 <body>
     <header id="header_home-page">
 
-        <aside>
+        <div class="navigation" id="navbar">
 
-            <div id="Sidebar" class="Barra-Lateral" style="display: none; z-index: 5;">
-                <button class="bar-item" onclick="sidebar_close()">Close &times;</button>
-                <a href="" class="bar-item">Link 1</a>
-                <a href="" class="bar-item">Link 2</a>
-                <a href="" class="bar-item">Link 3</a>
+            <div id="nav-toggle" class="nav-toggle" onclick="toggleMenu()">
+                <img src="./img/seta_16px.png">
             </div>
 
-            <!--Lateral da barra ativa-->
-            <div class="w3-overlay w3-animate-opacity" onclick="sidebar_close()" style="cursor:pointer" id="Overlay"></div>
-          
-            <div id="botao">
-                <button class="bar-button" onclick="sidebar_open()">&#9776;</button>
-            </div>
+            <ul class="sidebar">
 
-        </aside>
+                <li id="logo-sidebar">
+                    <a href="#">
+                        <span>
+                            <img src="./img/face-psd-2.png">
+                        </span>
+                    </a>
+                </li class="menu-item">
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
 
-        <nav>
-            <ul>
-                <li class="home-page">
-                    <a href="home_page.html">Página Inicial</a>
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Agenda</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="index.html">Agenda</a>
+
+                <li class="menu-item" onclick="ativarSubmenu()">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Pacientes</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="index.html">Pacientes</a>
+
+                <li class="submenu-item">
+                    <a href="#">
+                        <span class="title">Lista de Pacientes</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="index.html">Finanças</a>
+
+                <li class="submenu-item">
+                    <a href="#">
+                        <span class="title">Pacientes do dia</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="index.html">Prescrição</a>
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Prescrição</span>
+                    </a>
                 </li>
-                <li>
-                    <a href="index.html">Mensagem</a>
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Mensagens</span>
+                    </a>
                 </li>
+
+                <li class="submenu-item">
+                    <a href="#">
+                        <span class="title">Mensagem personalizada</span>
+                    </a>
+                </li>
+
+                <li class="submenu-item">
+                    <a href="#">
+                        <span class="title">Alerta de Retorno</span>
+                    </a>
+                </li>
+
+                <li class="submenu-item">
+                    <a href="#">
+                        <span class="title">Créditos (SMS)</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Finanças</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Relatórios</span>
+                    </a>
+                </li>
+
+                <li class="submenu-item">
+                    <a href="#">
+                        <span class="title">Financeiro</span>
+                    </a>
+                </li>
+
+                <li class="submenu-item">
+                    <a href="#">
+                        <span class="title">Consultas</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+
             </ul>
 
-        </nav>
+        </div>
 
         <div id="icones-header">
             <div id="icones">
@@ -63,8 +154,8 @@
                     <img src="./img/telefoneico.png">
                 </div>
                 <div id="icone-perfil">
-                    <img src="./img/twitter-psd-2.png">
                     <a id="nome-icone-perfil">Dr. Lucas</a>
+                    <img src="./img/seta_16px.png">
                 </div>
             </div>
         </div>

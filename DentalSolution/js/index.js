@@ -55,12 +55,37 @@ function fillSenha() {
 
 
 
-function sidebar_open() {
-    document.getElementById("Sidebar").style.display = "block";
-    document.getElementById("Overlay").style.display = "block";
-  }
-  
-  function sidebar_close() {
-    document.getElementById("Sidebar").style.display = "none";
-    document.getElementById("Overlay").style.display = "none";
-  }
+const showMenu = (toggleId, navbarId) => {
+    const toggle = document.getElementById(toggleId),
+        navbar = document.getElementById(navbarId)
+
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            navbar.classList.toggle('show')
+        })
+    }
+}
+
+showMenu('nav-toggle', 'navbar')
+
+
+
+
+
+
+function toggleMenu() {
+    let navigation = document.querySelector('.navigation')
+    navigation.classList.toggle('navbar-active')
+
+    let sidebar = document.querySelector('.sidebar')
+    sidebar.classList.toggle('sidebar-active')
+
+    let navtoggle = document.querySelector('.nav-toggle')
+    navtoggle.classList.toggle('nav-toggle-active')
+}
+
+function ativarSubmenu() {
+    let submenu = document.querySelector('.submenu-item')
+    submenu.classList.toggle('submenu-item-active')
+}
+//ARRUMAR ESSA FUNÇÃO PRA QUE TODOS OS SUBMENU-ITEMS APAREÇAM E NÃO SÓ O PRIMEIRO
