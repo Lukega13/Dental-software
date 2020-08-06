@@ -88,4 +88,8 @@ function ativarSubmenu() {
     let submenu = document.querySelector('.submenu-item')
     submenu.classList.toggle('submenu-item-active')
 }
-//ARRUMAR ESSA FUNÇÃO PRA QUE TODOS OS SUBMENU-ITEMS APAREÇAM E NÃO SÓ O PRIMEIRO
+
+function ativarMensagens() {
+    let mensagens = document.querySelector('.messages')
+    mensagens.classList.toggle('submenu-item-active')
+}
