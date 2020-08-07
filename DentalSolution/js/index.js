@@ -1,4 +1,6 @@
+//Index.html
 
+//Onfocus do email e senha
 function acionarEmail() {
     var email = document.getElementById('email');
     email.classList.remove('erro-input')
@@ -19,7 +21,7 @@ function acionarSenha() {
     text.classList.add('tittle-senha-active')
 }
 
-
+//Onblur email e senha
 function fillEmail() {
     var email = document.getElementById('email');
     var text = document.getElementById('tittle-email')
@@ -55,9 +57,9 @@ function fillSenha() {
 
 
 
+//Home-page.html
 
-
-
+//Abrir e Fechar sidebar
 function toggleMenu() {
     let navigation = document.querySelector('.navigation')
     navigation.classList.toggle('navbar-active')
@@ -92,6 +94,8 @@ function ativarRelatorios() {
     relatorios.classList.toggle('submenu-active')
 }
 
+
+//Abrir e Fechar perfil
 function abrirPerfil() {
     let perfil = document.querySelector('.container-perfil')
     perfil.classList.toggle('container-perfil-active')
