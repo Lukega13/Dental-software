@@ -1,0 +1,429 @@
+html, body {
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+ul {
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+
+
+
+#container {
+    display: grid;
+    grid-template-areas: 'login registre' 'login registre';
+    grid-template-rows: 50vh 50vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+/*Login*/
+#logo-index{
+    width: 100%;
+    height: 14vh;
+    background-image: url(../img/face-48.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    box-sizing: border-box;
+}
+#login-index {
+    grid-area: login;
+    background-color: white;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.5)), to rgba(40, 63, 97, 0.5) to rgba(0, 0, 0, 0.5)) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(rgba(0, 0, 0, 0.5) , rgba(40, 63, 97, 0.5), rgba(0, 0, 0, 0.5)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(rgba(0, 0, 0, 0.5) , rgba(40, 63, 97, 0.5), rgba(0, 0, 0, 0.5)) 1 100%; 
+    -o-border-image:
+      -o-linear-gradient(rgba(0, 0, 0, 0.5) , rgba(40, 63, 97, 0.5), rgba(0, 0, 0, 0.5)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5) , rgba(40, 63, 97, 0.5), rgba(0, 0, 0, 0.5)) 1 100%;
+}
+#conteudo-login-index {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+}
+#texto-login-index {
+    margin-bottom: 4vh;
+}
+#texto-login-index h1{
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+#texto-login-index h2{
+    font-size: 16px;
+    margin: 0;
+}
+#formulario {
+    width: 100%;
+}
+#email, #senha {
+    height: 6vh;
+    width: 100%;
+    font-family: cursive;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #c6c1ff;
+    border-right: none;
+    margin: 0 0 5vh 0;
+    padding: 0;
+    box-shadow: none !important;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+.input-acionado {
+    border-bottom: 1px solid blue !important;
+}
+.erro-input {
+    border-bottom: 1px solid red !important;
+}
+
+/*Tittle-Email*/
+#tittle-email {
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.tittle-email-active {
+    color: blue !important;
+}
+.tittle-email-error {
+    color: red !important;
+}
+
+/*Tittle-Senha*/
+#tittle-senha {
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.tittle-senha-active {
+    color: blue !important;
+}
+.tittle-senha-error {
+    color: red !important;
+}
+
+
+#esqueci-email-index {
+    margin: 0 0 2vh 0;
+}
+#esqueci-email-index a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+#esqueci-senha-index a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+#logar-index {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 7vh;
+    line-height: 48px;
+    margin: 0 0 4vh 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    line-height: 0;
+    background-color: rgba(64, 136, 246, 1);
+}
+#logar-index:hover {
+    background-color: rgba(22, 74, 154, 0.8);
+    color: white;
+}
+
+
+/*Cadastro*/
+#registre-index {
+    grid-area: registre;
+    background-color: #20B2AA;
+    width: 50vw;
+    display: flex;
+    justify-content: right;
+    box-sizing: border-box;
+}
+#conteudo-registre-index {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 3vh 0 0 7vw;
+    box-sizing: border-box;
+}
+#texto-registre-index h3 {
+    font-size: 14px;
+    color:  rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+#texto-registre-index h4 {
+    font-size: 20px;
+    color:  white;
+    margin: 4vh 0 7vh 0;
+}
+
+#button-registrar-index, #button-teste-index{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(64, 136, 246, 1);
+    text-align: left;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    display: block;
+    width: 55%;
+    height: 7vh;
+    line-height: 48px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    line-height: 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#button-registrar-index:hover, #button-teste-index:hover{
+    background-color: rgba(64, 136, 246, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+/*Teste 7 dias grátis*/
+#teste-gratis-index {
+    grid-area: teste;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    box-sizing: border-box;
+}
+
+#texto-teste-index{
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+}
+#texto-teste-index h4{
+    font-size: 20px;
+    color:  white;
+    margin: 0 0 10% 0;
+}
+
+
+#borda-index {
+    width: 100%;
+    max-width: 400px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+
+/*Responsividade Index*/
+@media screen and (min-width:2000px){
+    h1{
+        font-size: 28px !important;
+    }
+    h2{
+        font-size: 22px !important;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    h4 {
+        font-size: 28px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 20px !important;
+        padding: 0 0 0 30px !important;
+        width: 60% !important;
+    }
+    #logar-index{
+        font-size: 20px;
+    }
+    #email, #senha{
+        font-size: 18px;
+    }
+    #borda-index{
+        margin: 45px 0 !important;
+    }
+    #esqueci-email-index a, #esqueci-senha-index a{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1920px) and (max-width:2000px){
+    h1{
+        font-size: 26px !important;
+    }
+    h2{
+        font-size: 20px !important;
+    }
+    #logar-index{
+        font-size: 20px !important;
+    }
+    #email, #senha{
+        font-size: 18px !important;
+    }
+    #esqueci-email-index a, #esqueci-senha-index a{
+        font-size: 18px !important;
+    }
+    h3{
+        font-size: 18px !important;
+    }
+    h4 {
+        font-size: 26px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 18px !important;
+        padding: 0 0 0 30px !important;
+    }
+    #borda-index{
+        margin: 40px 0 !important;
+    }
+}
+
+@media screen and (min-width:1500px) and (max-width:1919px){
+    h1{
+        font-size: 24px !important;
+    }
+    h2{
+        font-size: 18px !important;
+    }
+    h3{
+        font-size: 16px !important;
+    }
+    h4 {
+        font-size: 24px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 16px !important;
+        padding: 0 0 0 25px !important;
+    }
+    #logar-index{
+        font-size: 16px;
+    }
+    #email, #senha{
+        font-size: 16px;
+    }
+    #borda-index{
+        margin: 35px 0 !important;
+    }
+    #esqueci-email-index a, #esqueci-senha-index a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1500px){
+    #conteudo-login-index{
+        width: 50% !important;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px){
+    #conteudo-login-index{
+        width: 55% !important;
+    }
+    h3{
+        font-size: 14px !important;
+    }
+    h4 {
+        font-size: 20px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 14px !important;
+        padding: 0 0 0 25px !important;
+    }
+}
+@media screen and (min-width:840px) and (max-width:1024px){
+    #conteudo-login-index{
+        width: 60% !important;
+    }
+    h1{
+        font-size: 22px !important;
+    }
+    h2{
+        font-size: 15px !important;
+    }
+    h3{
+        font-size: 12px !important;
+    }
+    h4 {
+        font-size: 16px !important;
+    }
+    #button-registrar-index, #button-teste-index {
+        font-size: 12px !important;
+        padding: 0 0 0 20px !important;
+        height: 6vh !important;
+    }
+    #logar-index {
+        height: 6vh !important;
+    }
+}
+@media screen and (min-width:100px) and (max-width:840px){
+/*Fazer o app mobile*/
+}
+
+.bar-button {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    width:100%;
+    text-align:left;
+}

@@ -55,21 +55,6 @@ function fillSenha() {
 
 
 
-const showMenu = (toggleId, navbarId) => {
-    const toggle = document.getElementById(toggleId),
-        navbar = document.getElementById(navbarId)
-
-    if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            navbar.classList.toggle('show')
-        })
-    }
-}
-
-showMenu('nav-toggle', 'navbar')
-
-
-
 
 
 
@@ -82,14 +67,32 @@ function toggleMenu() {
 
     let navtoggle = document.querySelector('.nav-toggle')
     navtoggle.classList.toggle('nav-toggle-active')
+
+    //Fechar os submenus quando fechar a sidebar
+    let pacientes = document.querySelector('.pacientes')
+    pacientes.classList.remove('submenu-active')
+    let mensagens = document.querySelector('.messages')
+    mensagens.classList.remove('submenu-active')
+    let relatorios = document.querySelector('.relatorios')
+    relatorios.classList.remove('submenu-active')
 }
 
-function ativarSubmenu() {
-    let submenu = document.querySelector('.submenu-item')
-    submenu.classList.toggle('submenu-item-active')
+function ativarPacientes() {
+    let pacientes = document.querySelector('.pacientes')
+    pacientes.classList.toggle('submenu-active')
 }
 
 function ativarMensagens() {
     let mensagens = document.querySelector('.messages')
-    mensagens.classList.toggle('submenu-item-active')
+    mensagens.classList.toggle('submenu-active')
+}
+
+function ativarRelatorios() {
+    let relatorios = document.querySelector('.relatorios')
+    relatorios.classList.toggle('submenu-active')
+}
+
+function abrirPerfil() {
+    let perfil = document.querySelector('.container-perfil')
+    perfil.classList.toggle('container-perfil-active')
 }
