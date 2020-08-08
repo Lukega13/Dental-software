@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/home-page.css">
+    <title>DentalSolution</title>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <header id="header_home-page">
+
+        <div id="nav-toggle" class="nav-toggle" onclick="toggleMenu()">
+            <img src="./img/seta_16px.png">
+        </div>
+
+        <aside class="navigation" id="navbar">
+
+            <ul class="sidebar">
+
+                <li id="logo-sidebar">
+                    <a href="#">
+                        <span>
+                            <img src="./img/face-psd-2.png">
+                        </span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Agenda</span>
+                    </a>
+                </li>
+
+                <ul class="submenu pacientes" onclick="ativarPacientes()">
+                    <li class="submenu-title">
+                        <a href="#">
+                            <span class="icon">
+                                <img src="./img/telefoneico.png">
+                            </span>
+                            <span class="title">Pacientes</span>
+                        </a>
+                    </li>
+
+                    <li class="submenu-item">
+                        <a href="#">
+                            <span class="title">Lista de Pacientes</span>
+                        </a>
+                    </li>
+
+                    <li class="submenu-item">
+                        <a href="#">
+                            <span class="title">Pacientes do dia</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Prescrição</span>
+                    </a>
+                </li>
+
+
+                <ul class="submenu messages" onclick="ativarMensagens()">
+                    <li class="submenu-title">
+                        <a href="#">
+                            <span class="icon">
+                                <img src="./img/telefoneico.png">
+                            </span>
+                            <span class="title">Mensagens</span>
+                        </a>
+                    </li>
+
+                    <li class="submenu-item">
+                        <a href="#">
+                            <span class="title">Mensagem personalizada</span>
+                        </a>
+                    </li>
+
+                    <li class="submenu-item">
+                        <a href="#">
+                            <span class="title">Alerta de Retorno</span>
+                        </a>
+                    </li>
+
+                    <li class="submenu-item">
+                        <a href="#">
+                            <span class="title">Créditos (SMS)</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Finanças</span>
+                    </a>
+                </li>
+
+
+                <ul class="submenu relatorios" onclick="ativarRelatorios()">
+
+                    <li class="submenu-title">
+                        <a href="#">
+                            <span class="icon">
+                                <img src="./img/telefoneico.png">
+                            </span>
+                            <span class="title">Relatórios</span>
+                        </a>
+                    </li>
+
+                    <li class="submenu-item">
+                        <a href="#">
+                            <span class="title">Financeiro</span>
+                        </a>
+                    </li>
+
+                    <li class="submenu-item">
+                        <a href="#">
+                            <span class="title">Consultas</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <li class="menu-item">
+                    <a href="#">
+                        <span class="icon">
+                            <img src="./img/telefoneico.png">
+                        </span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <div id="icones-header">
+
+            <div id="icones">
+
+                <div class="mini-icons">
+                    <img src="./img/telefoneico.png">
+                </div>
+
+                <div class="mini-icons">
+                    <img src="./img/email.png">
+                </div>
+
+                <div class="mini-icons">
+                    <img src="./img/telefoneico.png">
+                </div>
+
+                <div id="icone-perfil" onclick="abrirPerfil()">
+                    <a id="nome-icone-perfil">Dr. Lucas</a>
+                    <img src="./img/seta_16px.png">
+                </div>
+
+            </div>
+
+        </div>
+
+        <aside class="container-perfil">
+
+            <div id="perfil-user">
+                <img src="./img/user-provisorio.png" id="avatar">
+                <div id="user-informations">
+                    <span id="nome-user">Lucas Guimarães Abreu</span>
+                    <span id="email-user">lucasgabreu2010@hotmail.com</span>
+                </div>
+            </div>
+
+            <div id="container-menu-perfil">
+                <ul id="menu-perfil">
+
+                    <li class="menu-perfil-item">
+                        <a href="#">
+                            <span><img class="icon-perfil-item" src="./img/do-utilizador.png"></span>
+                            Meu Perfil</a>
+                    </li>
+
+                    <li class="menu-perfil-item">
+                        <a href="#">
+                            <span><img class="icon-perfil-item" src="./img/do-utilizador.png"></span>
+                            Equipe</a>
+                    </li>
+
+                    <li class="menu-perfil-item">
+                        <a href="#">
+                            <span><img class="icon-perfil-item" src="./img/do-utilizador.png"></span>
+                            Consultório</a>
+                    </li>
+
+                    <li class="menu-perfil-item">
+                        <a href="#">
+                            <span><img class="icon-perfil-item" src="./img/do-utilizador.png"></span>
+                            Acesso</a>
+                    </li>
+
+                    <li class="menu-perfil-item">
+                        <a href="#">
+                            <span><img class="icon-perfil-item" src="./img/do-utilizador.png"></span>
+                            Planos</a>
+                    </li>
+
+                    <li class="menu-perfil-item">
+                        <a href="#">
+                            <span><img class="icon-perfil-item" src="./img/do-utilizador.png"></span>
+                            Configurações</a>
+                    </li>
+
+                    <li id="dark-mode-menu">
+                        <div id="toggle-dark">
+                            <a>
+                                <span><img class="icon-dark-mode" src="./img/do-utilizador.png"></span>
+                                Dark Mode</a>
+
+                            <div id="button-dark-mode">
+                                <input id="btn-darkmode" type="checkbox" onclick="toggleTheme()">
+
+                                <label for="btn-darkmode">
+                                    <span class="off text">Off</span>
+                                    <span class="on text">On</span></div>
+                            </label>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div id="buttons-perfil">
+                <div id="logout">
+                    <a href="#">Sair
+                        <img src="./img/poder.png">
+                    </a>
+                </div>
+
+
+            </div>
+
+        </aside>
+
+    </header>
+
+    <main id="container">
+
+    </main>
+
+
+</body>
+
+</html>

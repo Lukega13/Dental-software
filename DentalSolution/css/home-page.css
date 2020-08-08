@@ -473,7 +473,6 @@ ul {
 
 
 
-
 /*Paineis*/
 #paineis {
     display: flex;
@@ -546,13 +545,18 @@ border: 1px solid black;
 
 
 
+/*Dark-Theme*/
 .dark-theme-paineis {
     background-color: #2e65a0 !important;
 }
 
+
+
 .dark-theme-header {
     background-color: #18406b !important;
 }
+
+
 
 .dark-theme-navbar,
 .dark-theme-navbar li {
@@ -563,11 +567,19 @@ border: 1px solid black;
     color: black !important;
 }
 
-.dark-theme-navbar ul.submenu-active,
-.dark-theme-navbar ul.submenu-active .submenu-title,
-.dark-theme-navbar ul.submenu-active .submenu-item {
+.dark-theme-navbar ul .submenu-active .submenu-title{
     background-color: #2e65a0 !important;
 }
+
+.dark-theme-navbar ul.submenu-active .submenu-item {
+    background-color: #18406b !important;
+}
+.dark-theme-navbar ul.submenu-active .submenu-item:hover {
+    background-color: #2e65a0 !important;
+}
+
+
+
 
 .dark-theme-icones #icones #icone-perfil a {
     color: black;
@@ -588,3 +600,24 @@ border: 1px solid black;
 .dark-theme-perfil #toggle-dark {
     background-color: #4e7fc7 !important;
 }
+
+
+
+
+
+
+
+
+
+
+/*Lista-Pacientes*/
+#container {
+    height: 92vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #99ece8;
+}
+
+
