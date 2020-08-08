@@ -374,11 +374,13 @@ ul {
     padding: 5px 2vw;
     box-sizing: border-box;
     background-color: #cbe7ff;
+    user-select: none;
 }
 #toggle-dark a {
     font-size: 18px;
     color: black;
     text-decoration: none;
+    user-select: none;
 }
 .icon-dark-mode {
     margin: 0 15px 0 0;
@@ -544,10 +546,45 @@ border: 1px solid black;
 
 
 
+.dark-theme-paineis {
+    background-color: #2e65a0 !important;
+}
 
-/*Estilização de cada página individualmente*/
+.dark-theme-header {
+    background-color: #18406b !important;
+}
 
-/*Dashboard*/
-.dashboard-style-navbar {
-    background-color: #18406b;
+.dark-theme-navbar,
+.dark-theme-navbar li {
+    background-color: #18406b !important;
+}
+
+.dark-theme-navbar li a span.title {
+    color: black !important;
+}
+
+.dark-theme-navbar ul.submenu-active,
+.dark-theme-navbar ul.submenu-active .submenu-title,
+.dark-theme-navbar ul.submenu-active .submenu-item {
+    background-color: #2e65a0 !important;
+}
+
+.dark-theme-icones #icones #icone-perfil a {
+    color: black;
+}
+
+.dark-theme-perfil {
+    background-color: #18406b !important;
+}
+
+.dark-theme-perfil #container-menu-perfil ul .menu-perfil-item a {
+    background-color: #4e7fc7 !important;
+    border-bottom: 1px solid #1c7996 !important;
+}
+.dark-theme-perfil #container-menu-perfil ul .menu-perfil-item a:hover {
+    background-color: #3998b5 !important;
+}
+
+.dark-theme-perfil #toggle-dark {
+    background-color: #4e7fc7 !important;
 }

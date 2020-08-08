@@ -100,3 +100,29 @@ function abrirPerfil() {
     let perfil = document.querySelector('.container-perfil')
     perfil.classList.toggle('container-perfil-active')
 }
+
+
+//Colocar em Dark Mode
+function toggleTheme() {
+    let paineis = document.querySelector('.paineis')
+    paineis.classList.toggle('dark-theme-paineis')
+
+    let header = document.querySelector('#header_home-page')
+    header.classList.toggle('dark-theme-header')
+
+    let navtoggle = document.querySelector('#nav-toggle')
+    navtoggle.classList.toggle('dark-theme-navbar')
+
+    let sidebar = document.querySelector('#navbar')
+    sidebar.classList.toggle('dark-theme-navbar')
+
+    let sidebarItems = document.querySelector('.sidebar')
+    sidebarItems.classList.toggle('dark-theme-navbar')
+
+    let icones = document.querySelector('#icones-header')
+    icones.classList.toggle('dark-theme-icones')
+
+    let containerPerfil = document.querySelector('.container-perfil-active')
+    containerPerfil.classList.toggle('dark-theme-perfil')
+}
+
