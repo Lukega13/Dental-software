@@ -104,8 +104,8 @@ function abrirPerfil() {
 
 //Colocar em Dark Mode
 function toggleTheme() {
-    let paineis = document.querySelector('.paineis')
-    paineis.classList.toggle('dark-theme-paineis')
+    let main = document.querySelector('.main-container')
+    main.classList.toggle('dark-theme-container')
 
     let header = document.querySelector('#header_home-page')
     header.classList.toggle('dark-theme-header')
@@ -124,5 +124,6 @@ function toggleTheme() {
 
     let containerPerfil = document.querySelector('.container-perfil-active')
     containerPerfil.classList.toggle('dark-theme-perfil')
-}
 
+
+}

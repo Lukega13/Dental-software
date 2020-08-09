@@ -89,10 +89,6 @@ ul {
 }
 .menu-item, .submenu-item, .submenu-title {
     border-bottom: 1px solid #3c70a9;
-    transition: 1s all ease;
-    -webkit-transition: 1s all ease;
-    -moz-transition: 1s all ease;
-    -o-transition: 1s all ease;
 }
 
 .menu-item {
@@ -101,10 +97,6 @@ ul {
     height: 7vh;
     list-style: none;
     background-color: #2e65a0;
-    transition: 1s all ease;
-    -webkit-transition: 1s all ease;
-    -moz-transition: 1s all ease;
-    -o-transition: 1s all ease;
 }
 .menu-item:hover {
     background-color: #18406b;;
@@ -126,10 +118,6 @@ ul {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #3c70a9;
-    transition: 1s all ease;
-    -webkit-transition: 1s all ease;
-    -moz-transition: 1s all ease;
-    -o-transition: 1s all ease;
 }
 #logo-sidebar a {
     height: auto !important;
@@ -719,7 +707,7 @@ border: 1px solid black;
 
 
 /*Lista-Pacientes*/
-#container {
+#container-pacientes {
     height: 92vh;
     width: 100%;
     box-sizing: border-box;
