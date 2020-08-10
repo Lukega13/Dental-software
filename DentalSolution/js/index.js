@@ -104,7 +104,7 @@ function abrirPerfil() {
 
 //Colocar em Dark Mode
 function toggleTheme() {
-    let main = document.querySelector('.main-container')
+    let main = document.querySelector('body')
     main.classList.toggle('dark-theme-container')
 
     let header = document.querySelector('#header_home-page')
