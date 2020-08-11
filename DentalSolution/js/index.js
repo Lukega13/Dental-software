@@ -1,61 +1,59 @@
 //Index.html
 
-VER SE EU CONSIGO FAZER ISSO COM O CLASSNAME
-//Onfocus do email e senha
-function acionarEmail() {
-    var email = document.getElementById('email');
-    email.classList.remove('erro-input')
-    email.classList.add('input-acionado')
 
-    var text = document.getElementById('tittle-email')
-    text.classList.remove('tittle-email-error')
-    text.classList.add('tittle-email-active')
-}
-
-function acionarSenha() {
-    var senha = document.getElementById('senha');
-    senha.classList.remove('erro-input')
-    senha.classList.add('input-acionado')
-
-    var text = document.getElementById('tittle-senha')
-    text.classList.remove('tittle-senha-error')
-    text.classList.add('tittle-senha-active')
-}
-
-//Onblur email e senha
-function fillEmail() {
+function emailFocus() {
     var email = document.getElementById('email');
     var text = document.getElementById('tittle-email')
 
-    if (email.value.length < 3) {
-        email.classList.remove('input-acionado')
-        email.classList.add('erro-input')
+    text.style.display = 'block'
+    text.style.color = 'blue'
 
-        text.classList.remove('tittle-email-active')
-        text.classList.add('tittle-email-error')
-    } else {
-        acionarEmail()
-    }
+    email.style.borderBottom = '1px solid blue'
 }
 
-function fillSenha() {
-    var senha = document.getElementById('senha');
-    var text = document.getElementById('tittle-senha')
 
-    if (senha.value.length < 3) {
-        senha.classList.remove('input-acionado')
-        senha.classList.add('erro-input')
+function emailBlur() {
+    var email = document.getElementById('email');
+    var emailValue = document.getElementById('email').value;
 
-        text.classList.remove('tittle-senha-active')
-        text.classList.add('tittle-senha-error')
+    var text = document.getElementById('tittle-email')
+
+    if(emailValue.length <= 1){
+        email.style.borderBottom = '1px solid red'
+
+        text.style.color = 'red'
+
     } else {
-        acionarSenha()
+        emailFocus()
     }
 }
 
 
+function senhaFocus() {
+    var senha = document.getElementById('senha');
+    var text = document.getElementById('tittle-senha')
 
+    text.style.display = 'block'
+    text.style.color = 'blue'
 
+    senha.style.borderBottom = '1px solid blue'
+}
+
+function senhaBlur() {
+    var senha = document.getElementById('senha');
+    var senhaValue = document.getElementById('senha').value;
+
+    var text = document.getElementById('tittle-senha')
+
+    if(senhaValue.length <= 1){
+        senha.style.borderBottom = '1px solid red'
+
+        text.style.color = 'red'
+
+    } else {
+        senhaFocus()
+    }
+}
 
 
 //Home-page.html

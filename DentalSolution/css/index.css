@@ -94,25 +94,15 @@ input:focus {
     border: 0 none;
     outline: 0;
 } 
-.input-acionado {
-    border-bottom: 1px solid blue !important;
-}
-.erro-input {
-    border-bottom: 1px solid red !important;
-}
+
 
 /*Tittle-Email*/
 #tittle-email {
     font-size: 13px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    display: none;
 }
-.tittle-email-active {
-    color: blue !important;
-}
-.tittle-email-error {
-    color: red !important;
-}
+
 
 /*Tittle-Senha*/
 #tittle-senha {
