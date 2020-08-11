@@ -1,5 +1,6 @@
 //Index.html
 
+VER SE EU CONSIGO FAZER ISSO COM O CLASSNAME
 //Onfocus do email e senha
 function acionarEmail() {
     var email = document.getElementById('email');
