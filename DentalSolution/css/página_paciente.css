@@ -530,6 +530,120 @@ ul {
 }
 
 
+
+/*Aside Pacientes*/
+#menu-paciente {
+    height: 92vh;
+    width: 18vw;
+    background-color: white;
+    box-sizing: border-box;
+    border-right: 1px solid #1c7996;
+}
+#pacient-identification {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#alerta-paciente {
+    padding: 10px 0 0 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #8a4747;
+    box-sizing: border-box;
+}
+
+#pacient-name {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 5px 0;
+    box-sizing: border-box;
+}
+
+#imagem-paciente img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+
+#pacient-description {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#pacient-description h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: 500;
+}
+#pacient-description h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+
+#contato-paciente {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#contato-paciente h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+
+#send-message-pacient {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+#send-message-pacient a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: 500;
+    width: 100%;
+}
+
+
+#division {
+    margin: 5px 0;
+    background-image: linear-gradient(to right, transparent, #dbdbdb, transparent);
+    border: 0;
+    height: 1px;
+}
+
+
+
+
+
+
+
+
+
 /*Dark-Theme*/
 .dark-theme-header {
     background-color: #18406b !important;
