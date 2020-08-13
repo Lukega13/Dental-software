@@ -542,16 +542,27 @@ ul {
 #pacient-identification {
     width: 100%;
     box-sizing: border-box;
+    background-color: #e5f9ff;
+}
+
+#alerta {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0 0 0;
 }
 
 #alerta-paciente {
-    padding: 10px 0 0 0;
+    padding: 0;
     margin: 0;
     text-align: center;
-    width: 100%;
+    background-color: #c52121;
+    width: 80%;
     font-size: 14px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #8a4747;
+    color: #401414;
     box-sizing: border-box;
 }
 
@@ -630,11 +641,48 @@ ul {
 
 
 #division {
-    margin: 5px 0;
+    margin: 0 0 5px 0;
     background-image: linear-gradient(to right, transparent, #dbdbdb, transparent);
     border: 0;
     height: 1px;
 }
+
+
+#nav-paciente {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#nav-paciente ul li {
+    height: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+#nav-paciente ul li a {
+    box-sizing: border-box;
+    padding: 0 0 0 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
 
 
 
