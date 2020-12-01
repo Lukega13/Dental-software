@@ -10,6 +10,7 @@ html, body {
     width: 100% !important;
     height: 100% !important;
     overflow: hidden;
+    /*font-family: ;*/
 }
 ul {
     padding: 0 !important;
@@ -530,12 +531,14 @@ ul {
 
 .menu-item a {
     position: relative;
-    display: block;
     width: 100%;
     height: 100%;
     display: flex;
     text-decoration: none;
     color: white;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 10%;
 }
 
 #logo-sidebar {
@@ -550,27 +553,11 @@ ul {
     width: auto !important;
 }
 
-.icon { /*Posiciona os ícones na barra pra que só eles apareçam*/
-    position: relative;
-    display: block;
-    min-width: 4vw;
-    height: 100%;
-    line-height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 0 3%;
-    }
-
-.icon img {
-    height: 16px; /*Mudar conforme o tamanho da imagem*/
-}
     
 .title { /*igual o .icon mas sem o min-width e o text-align start*/
     position: relative;
     display: block;
-    padding: 0 0 0 10%;
+    padding: 0 20%;
     height: 100%;
     line-height: 60px;
     text-align: start;
@@ -596,19 +583,35 @@ ul {
     height: 100%;
     box-sizing: border-box;
 }
-.submenu li a {
+.submenu-item a {
     position: relative;
-    display: block;
     width: 100%;
     height: 100%;
     display: flex;
     text-decoration: none;
+    padding: 0 0 0 4%;
     color: white;
     transition: 1s all ease;
     -webkit-transition: 1s all ease;
     -moz-transition: 1s all ease;
     -o-transition: 1s all ease;
 }
+.submenu-title a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 10%;
+    transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -o-transition: 1s all ease;
+}
+
 .submenu-title:hover {
     background-color: #18406b;;
 }
@@ -1289,8 +1292,6 @@ border: 1px solid black;
 #container-agenda {
     display: grid;
     grid-template-areas: 'aside toolbar' 'aside calendar';
-    /*grid-template-rows: ;*/
-
     height: 92vh;
     width: 100vw;
     background-color: #ffffff;
@@ -1303,8 +1304,85 @@ border: 1px solid black;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 0 4vw;
+    padding: 0 3vw;
+    height: 12vh;
 }
+
+#search-bar-calendar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#search-bar-calendar button {
+    border-radius: 1000px;
+    border: none;
+    background-color: gold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#search-bar-calendar button i {
+    cursor: pointer;
+    padding: 10px;
+}
+
+#search-bar-calendar input {
+    height: 28px;
+    width: 200px;
+    font-family: cursive;
+    margin: 0 0 0 8px;
+    padding: 0 0 1px 5px;
+    border: 1px solid #b3b2b9;
+    border-radius: 3px;
+    box-shadow: none !important;
+    font-size: 15px;
+    cursor: text;
+    color: black;
+}
+
+#search-bar-calendar input:focus,
+#search-bar-calendar input:active {
+    box-shadow: 0 0 0 0;
+    border: 1px solid #3998b5;
+    outline: 0;
+}
+
+#settings-calendar button {
+color: #ffffff;
+background-color: #2e65a0;
+border: 1px solid #7e7e7e !important;
+border-radius: 3px;
+padding: 8px;
+cursor: pointer;
+box-shadow: 0 0 0 0;
+outline: 0;
+font-size: 14px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#settings-calendar button:hover {
+    box-shadow: 0 0 0 0;
+    border: 1px solid #b4b4b4 !important;
+    outline: 0;
+    color: rgba(0, 0, 0, 1.0);
+    background-color: #cfcfcf;
+    background-image: none;
+}
+#settings-calendar button:active {
+    box-shadow: 0 0 0 0;
+    border: 1px solid #b4b4b4 !important;
+    outline: 0;
+    color: rgba(0, 0, 0, 1.0);
+    background-color: #cfcfcf;
+    background-image: none;
+}
+
+
+
 
 
 #aside-calendar {
@@ -1323,7 +1401,9 @@ border: 1px solid black;
 /*Mini calendar aside*/
 .container-mini-calendar {
     width: 100%;
-    height: 30%;
+    height: 33%;
+    min-width: 200px;
+    min-height: 184px;
     background-color: #12121f;
     color: #eee;
     display: flex;
@@ -1334,14 +1414,14 @@ border: 1px solid black;
 .calendar {
     width: 100%;
     height: 100%;
-    background-color: #222227;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
   
 .month {
     width: 100%;
     height: 40px;
-    background-color: #167e56;
+    background-color: #008992;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1384,7 +1464,7 @@ border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    color: #000000;
 }
   
 .days {
@@ -1392,6 +1472,7 @@ border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     padding: 1px;
+    color: #000000;
 }
   
 .days div {
@@ -1402,25 +1483,29 @@ border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     transition: background-color 0.2s;
 }
   
 .days div:hover:not(.today) {
-    background-color: #262626;
-    border: 1px solid #777;
+    background-color: #58bec6;
+    border: 1px solid #939393;
     cursor: pointer;
 }
   
 .prev-date,
 .next-date {
-    opacity: 0.5;
+    color: #898989;
 }
   
 .today {
-    background-color: #167e56;
+    background-color:#008992;
 }
 
+#lembretes-calendar {
+    background-color: bisque;
+    height: 67%;
+    width: 100%;
+}
 
 #lembretes-calendar h2{
     font-size: 18px;
@@ -1431,6 +1516,7 @@ border: 1px solid black;
 
 #calendar {
     grid-area: calendar;
+    height: 80vh;
     width: 85vw;
     box-sizing: border-box;
 }
