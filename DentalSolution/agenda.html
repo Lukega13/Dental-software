@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <header id="header_home-page">
 
         <div id="nav-toggle" class="nav-toggle" onclick="toggleMenu()">
@@ -30,7 +29,7 @@
                 </li>
 
                 <li class="menu-item">
-                    <a href="#">
+                    <a href="home_page.html">
                         <span class="icon">
                             <img src="./img/telefoneico.png">
                         </span>
@@ -269,10 +268,199 @@
 
     </header>
 
-    <main id="container-pacientes">
+    <main id="container-agenda">
 
+        <div id="calendar-toolbar">
+
+            <span id="search-bar-calendar">
+                <button id="search-calendar-button" type="button">
+                    <i>
+                        <!--Colocar um ícone de procura-->
+                    </i>
+                </button>
+
+                <input type="text" placeholder="buscar" id="search-calendar" autocomplete="off">
+            </span>
+
+            <span id="settings-calendar">
+                <button type="button">
+                    <i>
+                        <!--Colocar icone de configuração-->
+                    </i>
+                    Configurações
+                </button>
+            </span>
+
+        </div>
+
+        <aside id="aside-calendar">
+
+            <div id="aside-mini-calendar"></div>
+
+            <div id="lembretes-calendar">
+                <h2>Lembretes da semana</h2>
+                <button type="button">Adicionar lembrete</button>
+            </div>
+
+        </aside>
+
+        <div id="calendar">
+
+            <div id="calendar-tools">
+
+                <div id="buttons-calendar">
+                    <button type="button" id="button-yesar" class="button-corner-left">Ano</button>
+                    <button type="button" id="button-month">Mês</button>
+                    <button type="button" id="button-weekend" class="button-corner-right" autofocus>Semana</button>
+                </div>
+
+                <div id="header-calendar">
+                    <button type="button" id="prev-button-calendar">&lt;</button>
+                    <span>30 de Nov - 5 de Dez 2020</span>
+                    <button type="button" id="next-button-calendar">&gt;</button>
+                </div>
+
+                <div id="print-calendar">
+                    <a href="#" onclick="">
+                        <i>
+                            <!--colocar um icone de impressora--></i>
+                        Imprimir
+                    </a>
+                </div>
+
+            </div>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <span>Dia</span>
+                        </th>
+                        <th>
+                            <span>
+                                Domingo
+                            </span>
+                            <span>
+                                30/11
+                            </span>
+                        </th>
+
+                        <th>
+                            <span>
+                                Segunda
+                            </span>
+                            <span>
+                                01/12
+                            </span>
+                        </th>
+
+                        <th>
+                            <span>
+                                Terça
+                            </span>
+                            <span>
+                                02/12
+                            </span>
+                        </th>
+
+                        <th>
+                            <span>
+                                Quarta
+                            </span>
+                            <span>
+                                03/12
+                            </span>
+                        </th>
+
+                        <th>
+                            <span>
+                                Quinta
+                            </span>
+                            <span>
+                                04/12
+                            </span>
+                        </th>
+
+                        <th>
+                            <span>
+                                Sexta
+                            </span>
+                            <span>
+                                05/12
+                            </span>
+                        </th>
+
+                        <th>
+                            <span>
+                                Sábado
+                            </span>
+                            <span>
+                                06/12
+                            </span>
+                        </th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>6:00</td>
+                    </tr>
+                    <tr>
+                        <td>7:00</td>
+                    </tr>
+                    <tr>
+                        <td>8:00</td>
+                    </tr>
+                    <tr>
+                        <td>9:00</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                    </tr>
+                    <tr>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>19:00</td>
+                    </tr>
+                    <tr>
+                        <td>20:00</td>
+                    </tr>
+                    <tr>
+                        <td>21:00</td>
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+        </div>
     </main>
-
 
 </body>
 

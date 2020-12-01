@@ -18,7 +18,7 @@ function emailBlur() {
 
     var text = document.getElementById('tittle-email')
 
-    if(emailValue.length <= 1){
+    if (emailValue.length <= 1) {
         email.style.borderBottom = '1px solid red'
 
         text.style.color = 'red'
@@ -45,7 +45,7 @@ function senhaBlur() {
 
     var text = document.getElementById('tittle-senha')
 
-    if(senhaValue.length <= 1){
+    if (senhaValue.length <= 1) {
         senha.style.borderBottom = '1px solid red'
 
         text.style.color = 'red'
