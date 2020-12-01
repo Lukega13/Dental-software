@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 html, body {
     box-sizing: border-box !important;
     margin: 0 !important;
@@ -1282,7 +1287,7 @@ border: 1px solid black;
 /*AGENDA*/
 #container-agenda {
     display: grid;
-    grid-template-areas: 'toolbar toolbar' 'aside calendar';
+    grid-template-areas: 'aside toolbar' 'aside calendar';
     /*grid-template-rows: ;*/
 
     height: 92vh;
@@ -1305,15 +1310,121 @@ border: 1px solid black;
     grid-area: aside;
     display: flex;
     text-align: center;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 15vw;
+    height: 100%;
+    border-right: 1px solid #000000;
 }
+
+
+/*Mini calendar aside*/
+.container-mini-calendar {
+    width: 100%;
+    height: 30%;
+    background-color: #12121f;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.calendar {
+    width: 100%;
+    height: 100%;
+    background-color: #222227;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+}
+  
+.month {
+    width: 100%;
+    height: 40px;
+    background-color: #167e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    text-align: center;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+  
+.month i {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+.month h1 {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+  
+.month p {
+    font-size: 11px;
+}
+  
+.weekdays {
+    width: 100%;
+    height: 20px;
+    padding: 0px 4px;
+    display: flex;
+    align-items: center;
+}
+  
+.weekdays div {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: calc(442px / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+  
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+}
+  
+.days div {
+    font-size: 10px;
+    margin: 0px;
+    width: calc(201px / 7);
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+}
+  
+.days div:hover:not(.today) {
+    background-color: #262626;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+  
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+  
+.today {
+    background-color: #167e56;
+}
+
 
 #lembretes-calendar h2{
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px 0;
 }
+
 
 
 
