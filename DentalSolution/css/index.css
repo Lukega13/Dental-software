@@ -9,7 +9,7 @@ html, body {
     padding: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    overflow: hidden;
+    overflow-x: hidden;
     /*font-family: ;*/
 }
 ul {
@@ -478,9 +478,8 @@ ul {
 }
 
 #nav-toggle {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
+    float: left;
     height: 8vh;
     width: 5vw;
     display: flex;
@@ -493,6 +492,9 @@ ul {
     -webkit-transition: 1s all ease;
     -moz-transition: 1s all ease;
     -o-transition: 1s all ease;
+    /* position: fixed; 
+    top: 0; 
+    left: 0; */
 }
 .nav-toggle-active {
     margin: 0 0 0 17vw !important;
@@ -539,6 +541,10 @@ ul {
     align-items: center;
     justify-content: flex-start;
     padding: 0 0 0 10%;
+}
+.menu-item a i {
+    width: 18px;
+    height: 18px;
 }
 
 #logo-sidebar {
@@ -589,12 +595,19 @@ ul {
     height: 100%;
     display: flex;
     text-decoration: none;
-    padding: 0 0 0 4%;
+    padding: 0 0 0 10%;
     color: white;
     transition: 1s all ease;
     -webkit-transition: 1s all ease;
     -moz-transition: 1s all ease;
     -o-transition: 1s all ease;
+}
+.submenu-title a i {
+    width: 18px;
+    height: 18px;
+}
+.submenu-item a .title {
+    padding: 0;
 }
 .submenu-title a {
     position: relative;
@@ -761,6 +774,11 @@ ul {
     box-sizing: border-box;
     width: 100%;
 }
+#menu-perfil li a i {
+    margin: 0 16px 0 2vw;
+    height: 18px;
+    width: 18px;
+}
 
 .menu-perfil-item {
     list-style: none;
@@ -773,7 +791,7 @@ ul {
     font-size: 18px;
     color: black;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-start;
     padding: 10px 0;
     border-bottom: 1px solid rgb(186 219 247);
@@ -783,9 +801,6 @@ ul {
     -webkit-transition: 1s all ease;
     -moz-transition: 1s all ease;
     -o-transition: 1s all ease;
-}
-.menu-perfil-item a span {
-    margin: 0 15px 0 0;
 }
 .icon-perfil-item {
     margin: 0 0 0 2vw;
@@ -1304,7 +1319,8 @@ border: 1px solid black;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 0 3vw;
+    padding: 0 1.5vw 0 1vw;
+    margin: 0 3vw 0 1vw;
     height: 12vh;
 }
 
@@ -1393,15 +1409,14 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     flex-direction: column;
     width: 15vw;
     height: 100%;
-    border-right: 1px solid #000000;
     box-sizing: border-box;
+    margin: 10px 0 0 10px;
 }
 
 
 /*Mini calendar aside*/
 .container-mini-calendar {
     width: 100%;
-    height: 33%;
     min-width: 200px;
     min-height: 184px;
     background-color: #12121f;
@@ -1409,13 +1424,13 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
   
 .calendar {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
   
 .month {
@@ -1473,6 +1488,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     flex-wrap: wrap;
     padding: 1px;
     color: #000000;
+    font-family: cursive;
 }
   
 .days div {
@@ -1494,7 +1510,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   
 .prev-date,
 .next-date {
-    color: #898989;
+    color: #b3b3b3;
 }
   
 .today {
@@ -1503,8 +1519,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 #lembretes-calendar {
     background-color: bisque;
-    height: 67%;
+    height: 75%;
     width: 100%;
+    margin: 0 0 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 #lembretes-calendar h2{
@@ -1516,18 +1534,20 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 #calendar {
     grid-area: calendar;
-    height: 80vh;
+    /*height: 80vh;*/
     width: 85vw;
     box-sizing: border-box;
+    padding: 0 3vw 0 1vw;
 }
 #calendar-tools {
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 10px 0;
+    margin: 0;
     background-color: rgba(206, 151, 99, 0.6);
-    padding: 16px 20px;
+    padding: 16px 30px 16px 20px;
 }
 #buttons-calendar {
     margin: 0;
@@ -1583,6 +1603,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     border: 1px solid #b4b4b4;
     padding: 8px 10px;
     color: black;
+    cursor: pointer;
 }
 #header-calendar span {
     font-size: 24px;
@@ -1600,4 +1621,46 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     box-shadow: 0 0 0 0;
     outline: 0;
     background-image: none;
+}
+
+#print-calendar a {
+    color: #5c5c5c;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 7px;
+    border-radius: 3px;
+}
+#print-calendar a:hover {
+    background-color: #dbdbdb;
+}
+
+
+
+
+#table-calendar {
+    width: 100%;
+}
+#table-calendar table {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(160, 160, 160);
+    border-collapse: collapse;
+}
+#table-calendar table th, 
+#table-calendar table td {
+    border: 1px solid rgb(160, 160, 160);
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #885f2e;
+    padding: 2px 0;
+    margin: 0;
+    text-align: center;
+}
+#table-calendar table td {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    padding: 10px 0;
+    color: #917d64;
 }
