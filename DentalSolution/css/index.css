@@ -1617,6 +1617,9 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     background-color: #cfcfcf;
     background-image: none;
 }
+#header-calendar button:hover {
+    background-color: rgba(236, 236, 236, 0.9);
+}
 #header-calendar button:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
@@ -1632,7 +1635,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     border-radius: 3px;
 }
 #print-calendar a:hover {
-    background-color: #dbdbdb;
+    background-color: rgba(236, 236, 236, 0.5);
 }
 
 
