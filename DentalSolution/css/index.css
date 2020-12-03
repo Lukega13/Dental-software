@@ -10,6 +10,7 @@ html, body {
     width: 100% !important;
     height: 100% !important;
     overflow-x: hidden;
+    background-color: #eeeeee;
     /*font-family: ;*/
 }
 ul {
@@ -1671,4 +1672,159 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     white-space: nowrap;
     padding: 10px 0;
     color: #917d64;
+}
+
+
+
+
+
+
+
+
+
+
+#container-lista-paciente {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6vh 4vw 0 4vw;
+}
+#header-lista-pacientes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 45px 15px 25px;
+    background-color: #bebebe;
+}
+#header-lista-pacientes h2 {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4e4e4e;
+}
+#header-lista-pacientes button {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #008992;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 14px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+#header-lista-pacientes button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #17657c;
+}
+#header-lista-pacientes button:active {
+    box-shadow: 0 0 0 0;
+    border: 1px solid #b4b4b4 !important;
+    outline: 0;
+    color: rgba(0, 0, 0, 1.0);
+    background-color: #cfcfcf;
+    background-image: none;
+}
+
+#searchbox-lista-pacientes {
+    padding: 40px 0 25px 0;
+    background-color: #e1e1db;
+}
+#filtrobuscapacientes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#row1-filtro-pacientes,
+#row2-filtro-pacientes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+#row1-filtro-pacientes {
+    margin: 0 0 25px 0;
+}
+
+.inputs-filtro-pacientes{
+padding: 0 25px;
+width: 33%;
+}
+
+.inputs-filtro-pacientes input,
+.inputs-filtro-pacientes select {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px 5px;
+    margin: 5px 0 0 0;
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.inputs-filtro-pacientes label {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 10px 0;
+}
+
+
+.inputs-filtro-pacientes input:focus,
+.inputs-filtro-pacientes select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px  solid rgb(143, 143, 143);
+}´
+
+#filtro-paciente-submeter {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #008992;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 14px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+#container-patient-list {
+    padding: 5vh 0 0 0;
+}
+
+#table-patient-list {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#table-patient-list,
+#table-patient-list th,
+#table-patient-list td {
+    border: 1px solid #b6b6b6;
+}
+
+#table-patient-list th {
+    background-color: #d5d5d5;
+    vertical-align: top;
+    text-align: left;
+    padding: 7px;
+    color: #454040;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+#table-patient-list td {
+    background-color: white;
+    vertical-align: top;
+    padding: 10px;
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 300;
 }

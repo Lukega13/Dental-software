@@ -286,7 +286,131 @@
 
     </header>
 
-    <main id="container-paciente">
+    <main id="container-principal-lista-paciente">
+
+        <div id="container-lista-paciente">
+
+            <div id="header-lista-pacientes">
+
+                <h2> Lista de Pacientes</h2>
+
+                <a href="#<!--Novo pacientes-->">
+                    <button type="button">Novo paciente</button>
+                </a>
+            </div>
+
+            <div id="searchbox-lista-pacientes">
+
+                <form name="filtobuscapacientes" id="filtobuscapacientes" action="#">
+
+                    <div id="row1-filtro-pacientes">
+
+                        <div class="inputs-filtro-pacientes">
+                            <label class="label-filtro-pacientes" for="nome">Nome do Paciente</label>
+                            <br>
+                            <input type="text" placeholder="Buscar por nome" name="nome" id="nome" value="">
+                        </div>
+
+                        <div class="inputs-filtro-pacientes">
+                            <label class="label-filtro-pacientes" for="">Idade</label>
+                            <br>
+                            <input type="text" placeholder="Idade" name="idade" id="idade" value="">
+                        </div>
+
+                        <div class="inputs-filtro-pacientes">
+
+                            <label class="label-filtro-pacientes" for="">Sexo</label>
+                            <br>
+                            <select name="nome" id="nome">
+
+                                <option value selected>-</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div id="row2-filtro-pacientes">
+
+                        <div class="inputs-filtro-pacientes">
+                            <label class="label-filtro-pacientes" for="">Prontuário</label>
+                            <br>
+                            <input type="text" placeholder="Número do prontuário" name="prontuario" id="prontuario"
+                                value="">
+                        </div>
+
+                        <div class="inputs-filtro-pacientes">
+                            <label class="label-filtro-pacientes" for="">CPF</label>
+                            <br>
+                            <input type="text" placeholder="CPF" name="cpf-paciente" id="cpf-paciente" value="">
+                        </div>
+
+                        <div class="inputs-filtro-pacientes">
+                            <label class="label-filtro-pacientes" for="">RG</label>
+                            <br>
+                            <input type="text" placeholder="RG" name="rg-paciente" id="rg-paciente" value="">
+                        </div>
+
+                    </div>
+
+                    <button type="submit" id="filtro-paciente-submeter" name="filtropacientesubmeter">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div id="container-patient-list">
+
+                <table id="table-patient-list">
+                    <thead>
+
+                        <tr>
+                            <th>Nome</th>
+
+                            <th>Idade</th>
+
+                            <th>Sexo</th>
+
+                            <th>Telefone</th>
+
+                            <th>Prontuário</th>
+
+                            <th>Obs</th>
+
+                            <th>Fon</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tbody-patient-list">
+
+                        <tr>
+
+                            <td>Lucas Guimarães Abreu</td>
+                            <td>19</td>
+                            <td>M</td>
+                            <td>34 99632-5828</td>
+                            <td>13151716</td>
+                            <td>1 Risco</td>
+                            <td><i class="fas fa-cogs"></i></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+        </div>
+
 
     </main>
 
