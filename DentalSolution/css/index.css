@@ -10,7 +10,7 @@ html, body {
     width: 100% !important;
     height: 100% !important;
     overflow-x: hidden;
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
     /*font-family: ;*/
 }
 ul {
@@ -549,7 +549,7 @@ ul {
 }
 
 #logo-sidebar {
-    height: 80px !important;
+    height: 16vh !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1143,7 +1143,7 @@ border: 1px solid black;
 #pacient-identification {
     width: 100%;
     box-sizing: border-box;
-    background-color: #e5f9ff;
+    background-color: #f5f5f5;
 }
 
 #alerta {
@@ -1152,18 +1152,18 @@ border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 0 0 0;
+    padding: 10px 0 0 0;
 }
 
 #alerta-paciente {
-    padding: 0;
+    padding: 2px;
     margin: 0;
     text-align: center;
-    background-color: #c52121;
+    background-color: #e32727;
     width: 80%;
     font-size: 14px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #401414;
+    color: #5b1515;
     box-sizing: border-box;
 }
 

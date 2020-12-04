@@ -83,11 +83,6 @@ function ativarPacientes() {
     pacientes.classList.toggle('submenu-active')
 }
 
-function ativarMensagens() {
-    let mensagens = document.querySelector('.messages')
-    mensagens.classList.toggle('submenu-active')
-}
-
 function ativarRelatorios() {
     let relatorios = document.querySelector('.relatorios')
     relatorios.classList.toggle('submenu-active')
@@ -211,3 +206,29 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+//Tabela lista de pacientes
+var tbody = document.getElementById("tbody-patient-list");
+
+//Preencher tabela
+var dados = [
+    ["Lucas Guimarães Abreu", "19", "M", "34 99632-5828", "13151719", "1 risco", "botao"],
+    ["Kleber Guimarães Abreu", "19", "M", "34 99632-5828", "13151719", "1 risco", "botao"],
+    ["Lucas Guimarães Abreu", "19", "M", "34 99632-5828", "13151719", "1 risco", "botao"]
+];
+
+for (var i = 0; i < dados.length; i++) {
+    var tr = "<tr>" +
+        "<td>" + dados[i][0] + "</td>" +
+        "<td>" + dados[i][1] + "</td>" +
+        "<td>" + dados[i][2] + "</td>" +
+        "<td>" + dados[i][3] + "</td>" +
+        "<td>" + dados[i][4] + "</td>" +
+        "<td>" + dados[i][5] + "</td>" +
+        "<td>" + dados[i][6] + "</td>" +
+        "</tr>";
+
+    tbody.innerHTML += tr;
+
+}
+
