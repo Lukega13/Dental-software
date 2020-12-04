@@ -291,7 +291,8 @@
                         <div class="inputs-filtro-pacientes">
                             <label class="label-filtro-pacientes" for="">Idade</label>
                             <br>
-                            <input type="text" placeholder="Idade" name="idade" id="idade-patientlist" value="">
+                            <input type="text" placeholder="Idade" name="idade" id="idade-patientlist" value=""
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </div>
 
                         <div class="inputs-filtro-pacientes">
@@ -316,20 +317,23 @@
                             <label class="label-filtro-pacientes" for="">Prontuário</label>
                             <br>
                             <input type="text" placeholder="Número do prontuário" name="prontuario-paciente"
-                                id="prontuario-patientlist" value="">
+                                id="prontuario-patientlist" value=""
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </div>
 
                         <div class="inputs-filtro-pacientes">
                             <label class="label-filtro-pacientes" for="">Telefone</label>
                             <br>
                             <input type="text" placeholder="Telefone" name="telefone-patientlist"
-                                id="telefone-patientlist" value="">
+                                id="telefone-patientlist" value=""
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </div>
 
                         <div class="inputs-filtro-pacientes">
                             <label class="label-filtro-pacientes" for="">CPF</label>
                             <br>
-                            <input type="text" placeholder="CPF" name="cpf-patientlist" id="cpf-patientlist" value="">
+                            <input type="text" placeholder="CPF" name="cpf-patientlist" id="cpf-patientlist" value=""
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                         </div>
 
                     </div>
@@ -411,53 +415,65 @@
 
             var busca = document.getElementById("nome-patientlist").value.toLowerCase();
 
-            for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
-                var achou = false;
-                var tr = tbody.childNodes[i];
-                var td = tr.childNodes;
+            if (busca != '') {
 
-                for (var j = 0; j < td.length; j++) {//Acessa as colunas
-                    var value = td[0].childNodes[0].nodeValue.toLowerCase();
+                for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
+                    var achou = false;
+                    var tr = tbody.childNodes[i];
+                    var td = tr.childNodes;
+
+                    for (var j = 0; j < td.length; j++) {//Acessa as colunas
+                        var value = td[0].childNodes[0].nodeValue.toLowerCase();
 
 
-                    if (value.indexOf(busca) >= 0) {
-                        achou = true
+                        if (value.indexOf(busca) >= 0) {
+                            achou = true
+                        }
+                    }
+
+                    if (achou) {
+                        tr.style.display = "table-row"
+                    } else {
+                        tr.style.display = "none"
                     }
                 }
+            } else {
 
-                if (achou) {
-                    tr.style.display = "table-row"
-                } else {
-                    tr.style.display = "none"
-                }
             }
         })
 
 
         //Busca por idade
+
         document.getElementById("idade-patientlist").addEventListener("keyup", function () {
 
             var busca = document.getElementById("idade-patientlist").value.toLowerCase();
 
-            for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
-                var achou = false;
-                var tr = tbody.childNodes[i];
-                var td = tr.childNodes;
+            if (busca != '') {
 
-                for (var j = 0; j < td.length; j++) {//Acessa as colunas
-                    var value = td[1].childNodes[0].nodeValue.toLowerCase();
+                for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
+                    var achou = false;
+                    var tr = tbody.childNodes[i];
+                    var td = tr.childNodes;
+
+                    for (var j = 0; j < td.length; j++) {//Acessa as colunas
+                        var value = td[1].childNodes[0].nodeValue.toLowerCase();
 
 
-                    if (value.indexOf(busca) >= 0) {
-                        achou = true
+                        if (value.indexOf(busca) >= 0) {
+                            achou = true
+                        }
+                    }
+
+                    if (achou) {
+                        tr.style.display = "table-row"
+                    } else {
+                        tr.style.display = "none"
                     }
                 }
 
-                if (achou) {
-                    tr.style.display = "table-row"
-                } else {
-                    tr.style.display = "none"
-                }
+            } else {
+
             }
 
         })
@@ -468,25 +484,30 @@
 
             var busca = document.getElementById("sexo-patientlist").value.toLowerCase();
 
-            for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
-                var achou = false;
-                var tr = tbody.childNodes[i];
-                var td = tr.childNodes;
+            if (busca != '') {
 
-                for (var j = 0; j < td.length; j++) {//Acessa as colunas
-                    var value = td[2].childNodes[0].nodeValue.toLowerCase();
+                for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
+                    var achou = false;
+                    var tr = tbody.childNodes[i];
+                    var td = tr.childNodes;
+
+                    for (var j = 0; j < td.length; j++) {//Acessa as colunas
+                        var value = td[2].childNodes[0].nodeValue.toLowerCase();
 
 
-                    if (value.indexOf(busca) >= 0) {
-                        achou = true
+                        if (value.indexOf(busca) >= 0) {
+                            achou = true
+                        }
+                    }
+
+                    if (achou) {
+                        tr.style.display = "table-row"
+                    } else {
+                        tr.style.display = "none"
                     }
                 }
+            } else {
 
-                if (achou) {
-                    tr.style.display = "table-row"
-                } else {
-                    tr.style.display = "none"
-                }
             }
 
         })
@@ -498,25 +519,30 @@
 
             var busca = document.getElementById("prontuario-patientlist").value.toLowerCase();
 
-            for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
-                var achou = false;
-                var tr = tbody.childNodes[i];
-                var td = tr.childNodes;
+            if (busca != '') {
 
-                for (var j = 0; j < td.length; j++) {//Acessa as colunas
-                    var value = td[4].childNodes[0].nodeValue.toLowerCase();
+                for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
+                    var achou = false;
+                    var tr = tbody.childNodes[i];
+                    var td = tr.childNodes;
+
+                    for (var j = 0; j < td.length; j++) {//Acessa as colunas
+                        var value = td[4].childNodes[0].nodeValue.toLowerCase();
 
 
-                    if (value.indexOf(busca) >= 0) {
-                        achou = true
+                        if (value.indexOf(busca) >= 0) {
+                            achou = true
+                        }
+                    }
+
+                    if (achou) {
+                        tr.style.display = "table-row"
+                    } else {
+                        tr.style.display = "none"
                     }
                 }
+            } else {
 
-                if (achou) {
-                    tr.style.display = "table-row"
-                } else {
-                    tr.style.display = "none"
-                }
             }
 
         })
@@ -527,27 +553,31 @@
 
             var busca = document.getElementById("telefone-patientlist").value.toLowerCase();
 
-            for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
-                var achou = false;
-                var tr = tbody.childNodes[i];
-                var td = tr.childNodes;
+            if (busca != '') {
 
-                for (var j = 0; j < td.length; j++) {//Acessa as colunas
-                    var value = td[3].childNodes[0].nodeValue.toLowerCase();
+                for (var i = 0; i < tbody.childNodes.length; i++) {//Acessa as linhas
+                    var achou = false;
+                    var tr = tbody.childNodes[i];
+                    var td = tr.childNodes;
+
+                    for (var j = 0; j < td.length; j++) {//Acessa as colunas
+                        var value = td[3].childNodes[0].nodeValue.toLowerCase();
 
 
-                    if (value.indexOf(busca) >= 0) {
-                        achou = true
+                        if (value.indexOf(busca) >= 0) {
+                            achou = true
+                        }
+                    }
+
+                    if (achou) {
+                        tr.style.display = "table-row"
+                    } else {
+                        tr.style.display = "none"
                     }
                 }
+            } else {
 
-                if (achou) {
-                    tr.style.display = "table-row"
-                } else {
-                    tr.style.display = "none"
-                }
             }
-
         })
 
         //Busca por CPF
