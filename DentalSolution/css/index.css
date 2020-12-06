@@ -1133,7 +1133,13 @@ border: 1px solid black;
 
 
 /*PÁGINA-PACIENTE*/
+#container-paciente {
+    display: grid;
+    grid-template-areas: 'aside container';
+}
+
 #menu-paciente {
+    grid-area: 'aside';
     height: 92vh;
     width: 18vw;
     background-color: white;
@@ -1279,9 +1285,56 @@ border: 1px solid black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#container-dados-paciente {
+    grid-area: 'container';
+    width: 82vw;
+    height: 92vh;
+}
+#header-dados-paciente {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 5vw;
+    background-color: #cecaff;
+}
+#header-dados-paciente h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+#header-dados-paciente a button {
+    padding: 8px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(245, 245, 245, 0.8);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #17657c;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    cursor: pointer;
+}
+#header-dados-paciente a button:hover {
+    background-color:  rgb(21, 130, 145);
+    color: white;
+}
 
-
-
+#row-1-content-dados-paciente,
+#row-2-content-dados-paciente {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 4vh 4vw 0 4vw;
+}
+#row-1-content-dados-paciente input, 
+#row-2-content-dados-paciente input {
+    color: black;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    width: auto;
+    padding: 0 0 0 5px;
+}
 
 /*Não lembro de onde é isso*/
 .bar-button {
@@ -1534,8 +1587,25 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 10px 0;
+    color: #89a199;
+    font-weight: 300;
 }
-
+#lembretes-calendar button {
+    padding: 3px 5px 4px 4px;
+    font-size: 13px;
+    font-family: cursive;
+    border: none;
+    border-radius: 5px;
+    background-color: #91c1b1;
+    color: white;
+    cursor: pointer;
+}
+#lembretes-calendar button:hover {
+    color: black;
+    border: none;
+    outline: 0;
+    background-color: #00a2ad;
+}
 
 #calendar {
     grid-area: calendar;
@@ -1667,11 +1737,11 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     text-align: center;
 }
 #table-calendar table td {
-    padding: 0;
+    padding: 0 4px;
     margin: 0;
     white-space: nowrap;
-    padding: 10px 0;
     color: #917d64;
+    height: 20px;
 }
 
 
