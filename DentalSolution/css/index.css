@@ -1300,6 +1300,7 @@ background-color: #ccc;
 }
 
 
+
 #container-dados-paciente {
     grid-area: 'container';
     width: 84vw;
@@ -1313,14 +1314,17 @@ background-color: #ccc;
 
 
 
+
 #conteudo-paciente {
     display: grid;
     grid-template-areas: "main-dados aside-dados";
+    grid-template-columns: 75% 25%;
     width: 100%;
 }
 
 #content-dados-paciente {
     grid-area: "main-dados";
+    width: 100%;
 }
 #header-dados-paciente {
     display: flex;
@@ -1350,6 +1354,79 @@ background-color: #ccc;
     background-color:  rgb(21, 130, 145);
     color: white;
 }
+
+#dados-paciente {
+    width: 100%;
+    padding: 20px 20px 0 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.form-group div input{
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 1px;
+    color: inherit;
+    padding: 6px 12px;
+    width: 30%;
+    font-size: 14px;
+}
+.form-group div label {
+    font-size: 18px;
+}
+
+
+#form-item-name input {
+    width: 500px;
+}
+
+
+#form-item-prontuario input {
+    width: 155px;
+}
+
+
+#form-item-birthdate input {
+    width: 105px;
+}
+
+
+#form-item-age input {
+    width: 100px;
+}
+
+
+#form-item-sexo input {
+    width: 193px;
+}
+
+
+#form-item-cidade input {
+    width: 300px;
+}
+
+
+#form-item-profissao input {
+    width: 280px;
+}
+
+
+#form-item-cpf input {
+    width: 250px;
+}
+
+
+#form-item-rg input {
+    width: 150px;
+}
+
 
 
 #aside-obs-patient {
