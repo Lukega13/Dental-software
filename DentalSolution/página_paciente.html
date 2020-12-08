@@ -449,7 +449,56 @@
                                     <input id="rg-paciente" name="rg-paciente" value="19273-852" disabled>
                                 </div>
 
+                                <div id="form-item-menorIdade">
+                                    <label for="menorIdade-paciente">Menor de idade?</label>
+                                    <select id="menorIdade-paciente" name="menorIdade-paciente">
+                                        <option value="Sim" selected>Sim</option>
+                                        <option value="Nao">Não</option>
+                                    </select>
+                                </div>
+
                             </div>
+
+
+                            <div class="form-group form-responsavel">
+
+                                <div id="form-item-nomeResponsavel">
+                                    <label for="nomeResponsavel-paciente">Nome do Responsável:</label>
+                                    <input id="nomeResponsavel-paciente" name="nomeResponsavel-paciente"
+                                        value="Lara Guimarães Silva Abreu" disabled>
+                                </div>
+
+                                <div id="form-item-parentesco">
+                                    <label for="parentesco-paciente">Parentesco:</label>
+                                    <input id="parentesco-paciente" name="parentesco-paciente" value="Mãe" disabled>
+                                </div>
+
+
+                            </div>
+
+                            <div class="form-group form-responsavel">
+
+                                <div id="form-item-profissaoResponsavel">
+                                    <label for="profissaoResponsavel-paciente">Profissão:</label>
+                                    <input id="profissaoResponsavel-paciente" name="profissaoResponsavel-paciente"
+                                        value="Estudante de Odontologia" disabled>
+                                </div>
+
+                                <div id="form-item-cpfResponsavel">
+                                    <label for="cpfResponsavel-paciente">CPF:</label>
+                                    <input id="cpfResponsavel-paciente" name="cpfResponsavel-paciente"
+                                        value="847.184.476-15" disabled>
+                                </div>
+
+                                <div id="form-item-rgResponsavel">
+                                    <label for="rgResponsavel-paciente">RG:</label>
+                                    <input id="rgResponsavel-paciente" name="rgResponsavel-paciente" value="19273-852"
+                                        disabled>
+                                </div>
+
+
+                            </div>
+
 
 
                             <div class="form-group">
@@ -489,6 +538,25 @@
 
 
     </main>
+
+    <script>
+
+        document.getElementById("menorIdade-paciente").addEventListener("change", () => {
+
+            var selectResponsavel = document.getElementById("menorIdade-paciente").value
+            var itensResponsavel = document.getElementsByClassName("form-responsavel")
+
+
+            if (selectResponsavel == "Sim") {
+                itensResponsavel[0].style.display = 'flex'
+                itensResponsavel[1].style.display = 'flex'
+
+            } else if (selectResponsavel == "Nao") {
+                itensResponsavel[0].style.display = 'none'
+                itensResponsavel[1].style.display = 'none'
+            }
+        })
+    </script>
 
     <script src="./js/index.js"></script>
 
