@@ -405,12 +405,12 @@
 
                                 <div id="form-item-birthdate">
                                     <label for="birth-paciente">Nascimento:</label>
-                                    <input id="birth-paciente" name="birth-paciente" value="01.04.2001" disabled>
+                                    <input id="birth-paciente" name="birth-paciente" value="08.12.2004" disabled>
                                 </div>
 
                                 <div id="form-item-age">
                                     <label for="age-paciente">Idade:</label>
-                                    <input id="age-paciente" name="age-paciente" value="19 anos" disabled>
+                                    <input id="age-paciente" name="age-paciente" value="" disabled>
                                 </div>
 
                                 <div id="form-item-sexo">
@@ -451,10 +451,7 @@
 
                                 <div id="form-item-menorIdade">
                                     <label for="menorIdade-paciente">Menor de idade?</label>
-                                    <select id="menorIdade-paciente" name="menorIdade-paciente">
-                                        <option value="Sim" selected>Sim</option>
-                                        <option value="Nao">Não</option>
-                                    </select>
+                                    <input id="menorIdade-paciente" name="menorIdade-paciente" disabled>
                                 </div>
 
                             </div>
@@ -540,22 +537,62 @@
     </main>
 
     <script>
+        document.getElementById("age-paciente").onload = menorIdade()
 
-        document.getElementById("menorIdade-paciente").addEventListener("change", () => {
+        function idadePaciente() {
 
-            var selectResponsavel = document.getElementById("menorIdade-paciente").value
+            var idadePaciente = document.getElementById("age-paciente").value
+            var birthdatePaciente = document.getElementById("birth-paciente").value
+
+            //Pega a data em portugues e transfere pra inglês
+            const dataSplit = birthdatePaciente.split('.')
+
+            const day = dataSplit[0]
+            const month = dataSplit[1]
+            const year = dataSplit[2]
+
+            //Data de hoje e Data Aniversário
+            var dataAtual = new Date()
+            var birthPaciente = new Date(year, month - 1, day)
+
+            //Retorna quantos anos tem o paciente (diferença de anos entre as datas arredondado pra baixo)
+            return agePaciente = Math.floor(Math.abs(birthPaciente.getTime() - dataAtual.getTime()) / (1000 * 60 * 60 * 24 * 365))
+
+        }
+
+        function menorIdade() {
+            //Menor de idade?
+            agePaciente = idadePaciente()
+
+            var valueResponsavel = document.getElementById("menorIdade-paciente").value
             var itensResponsavel = document.getElementsByClassName("form-responsavel")
 
+            if (agePaciente >= 18) {
+                document.getElementById("menorIdade-paciente").value = "Não"
 
-            if (selectResponsavel == "Sim") {
-                itensResponsavel[0].style.display = 'flex'
-                itensResponsavel[1].style.display = 'flex'
-
-            } else if (selectResponsavel == "Nao") {
                 itensResponsavel[0].style.display = 'none'
                 itensResponsavel[1].style.display = 'none'
-            }
-        })
+            } else if (agePaciente < 18) {
+                document.getElementById("menorIdade-paciente").value = "Sim"
+
+                itensResponsavel[0].style.display = 'flex'
+                itensResponsavel[1].style.display = 'flex'
+            } else { }
+
+
+        }
+
+        //Idade do paciente no input
+        document.getElementById("age-paciente").value = agePaciente.toString() + ' anos'
+
+        //Verifica se é o aniversário do Paciente e avisa
+        dataAtual = new Date()
+        if (birthPaciente = dataAtual) {
+            alert('Parabains')
+        }
+
+
+
     </script>
 
     <script src="./js/index.js"></script>

@@ -1435,7 +1435,7 @@ background-color: #ccc;
     width: 150px;
 }
 
-#form-item-menorIdade select {
+#form-item-menorIdade input {
     width: 100px;
 }
 
