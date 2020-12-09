@@ -1141,7 +1141,7 @@ border: 1px solid black;
 #menu-paciente {
     grid-area: 'aside';
     /*height: 92vh;*/
-    width: 16vw;
+    width: 18vw;
     background-color: white;
     box-sizing: border-box;
     border-right: 1px solid #1c7996;
@@ -1319,7 +1319,7 @@ background-color: #ccc;
 #conteudo-paciente {
     display: grid;
     grid-template-areas: "main-dados aside-dados";
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 70% 30%;
     width: 100%;
 }
 
@@ -1329,31 +1329,29 @@ background-color: #ccc;
 }
 #header-dados-paciente {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
-    padding: 4vh 5vw;
-    background-color: #cecaff;
+    padding: 3vh 0vw 0.5vh 0vw;
+    margin: 0 1.5vw;
+    border-bottom: 1px solid black;
 }
 #header-dados-paciente h2 {
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
-#header-dados-paciente a button {
-    padding: 8px 10px;
+#header-dados-paciente h2 i {
+    font-size: 20px;
+}
+#header-dados-paciente a {
+    padding: 0;
     font-size: 18px;
     font-family: sans-serif;
-    color: rgb(245, 245, 245, 0.8);
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #17657c;
-    box-shadow: 0 0 0 0;
+    text-decoration: none;
+    color: black;
+    border: none;
     outline: 0;
     cursor: pointer;
-}
-#header-dados-paciente a button:hover {
-    background-color:  rgb(21, 130, 145);
-    color: white;
 }
 
 #dados-paciente {
@@ -1392,12 +1390,12 @@ background-color: #ccc;
 
 
 #form-item-name input {
-    width: 500px;
+    width: 450px;
 }
 
 
 #form-item-prontuario input {
-    width: 155px;
+    width: 140px;
 }
 
 
@@ -1412,17 +1410,17 @@ background-color: #ccc;
 
 
 #form-item-sexo input {
-    width: 193px;
+    width: 190px;
 }
 
 
 #form-item-cidade input {
-    width: 300px;
+    width: 290px;
 }
 
 
 #form-item-profissao input {
-    width: 280px;
+    width: 270px;
 }
 
 
@@ -1440,7 +1438,7 @@ background-color: #ccc;
 }
 
 #form-item-nomeResponsavel input {
-    width: 430px;
+    width: 370px;
 }
 
 #form-item-parentesco input {
@@ -1448,15 +1446,15 @@ background-color: #ccc;
 }
 
 #form-item-profissaoResponsavel input {
-    width: 290px;
+    width: 270px;
 }
 
 #form-item-cpfResponsavel input {
-    width: 180px;
+    width: 170px;
 }
 
 #form-item-rgResponsavel input {
-    width: 150px;
+    width: 130px;
 }
 
 
