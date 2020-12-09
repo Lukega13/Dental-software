@@ -1331,7 +1331,7 @@ background-color: #ccc;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 3vh 0vw 0.5vh 0vw;
+    padding: 3vh 0.5vw 0.5vh 0vw;
     margin: 0 1.5vw;
     border-bottom: 1px solid black;
 }
@@ -1367,13 +1367,12 @@ background-color: #ccc;
     margin: 0 0 30px 0;
 }
 
-.form-group div input, 
-.form-group div select {
+.form-group div input {
     background-color: #FFFFFF;
     background-image: none;
     border: 1px solid #a3a3a3;
     border-radius: 1px;
-    color: black;
+    color: #625e5e;
     padding: 6px 12px;
     font-size: 14px;
     opacity: 1;
@@ -1400,17 +1399,17 @@ background-color: #ccc;
 
 
 #form-item-birthdate input {
-    width: 105px;
+    width: 120px;
 }
 
 
 #form-item-age input {
-    width: 100px;
+    width: 120px;
 }
 
 
 #form-item-sexo input {
-    width: 190px;
+    width: 140px;
 }
 
 
@@ -1438,11 +1437,11 @@ background-color: #ccc;
 }
 
 #form-item-nomeResponsavel input {
-    width: 370px;
+    width: 360px;
 }
 
 #form-item-parentesco input {
-    width: 100px;
+    width: 120px;
 }
 
 #form-item-profissaoResponsavel input {
@@ -1457,7 +1456,29 @@ background-color: #ccc;
     width: 130px;
 }
 
+#form-item-cep input {
+    width: 100px;
+}
 
+#form-item-address input {
+    width: 300px;
+}
+
+#form-item-bairro input {
+    width: 160px;
+}
+
+#form-item-city input {
+    width: 200px;
+}
+
+#form-item-estado input {
+    width: 170px;
+}
+
+#form-item-complemento input {
+    width: 130px;
+}
 
 
 
