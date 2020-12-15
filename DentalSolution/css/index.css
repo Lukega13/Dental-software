@@ -1300,6 +1300,16 @@ border: 1px solid black;
 background-color: #ccc;
 }
 
+#button-dados-paciente {
+    background-color: #ccc;
+}
+.button-onblur {
+    background-color: white;
+}
+.button-onblur:hover {
+    background-color: #ccc;
+}
+
 
 
 #container-dados-paciente {
@@ -1321,6 +1331,7 @@ background-color: #ccc;
     grid-template-areas: "main-dados aside-dados";
     grid-template-columns: 70% 30%;
     width: 100%;
+    border-top: 1px solid #1c7996;
 }
 
 #content-dados-paciente {
@@ -1509,7 +1520,8 @@ background-color: #ccc;
 
 #aside-obs-patient {
     grid-area: "aside-dados";
-    background-color: red;
+    background-color: #ffffff;
+    border-left: 1px solid #1c7996;
 }
 
 
