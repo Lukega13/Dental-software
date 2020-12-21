@@ -444,7 +444,7 @@
 
 
         //Busca por idade
-
+        
         document.getElementById("idade-patientlist").addEventListener("keyup", function () {
 
             var busca = document.getElementById("idade-patientlist").value.toLowerCase();
@@ -582,6 +582,115 @@
 
         //Busca por CPF
 
+
+
+
+
+
+
+        //OUTRA FORMA DE BUSCA
+        /*
+        document.getElementById("nome-patientlist").addEventListener("keyup", pesquisarNome)
+
+function pesquisarNome() {
+
+    var coluna = 0 //coluna dos nomes
+
+    var Filtrar, Tabela, tr, td, th, i;
+
+    Filtrar = document.getElementById("nome-patientlist")
+    Filtrar = Filtrar.value.toUpperCase()
+
+    Tabela = document.getElementById("tbody-patient-list")
+    tr = Tabela.getElementsByTagName("tr")
+    td = Tabela.getElementsByTagName("td")
+
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[coluna];
+
+        if (td) {
+            
+            if (td.innerHTML.toUpperCase().indexOf(Filtrar) > -1) {
+                tr[i].style.display = ''
+            } else {
+                tr[i].style.display = 'none'
+            }
+        }
+    }
+}
+
+
+document.getElementById("idade-patientlist").addEventListener("keyup", pesquisarIdade)
+
+function pesquisarIdade() {
+
+    var coluna = 1 //coluna dos nomes
+
+    var Filtrar, Tabela, tr, td, th, i;
+
+    Filtrar = document.getElementById("idade-patientlist")
+    Filtrar = Filtrar.value.toUpperCase()
+
+    Tabela = document.getElementById("tbody-patient-list")
+    tr = Tabela.getElementsByTagName("tr")
+    td = Tabela.getElementsByTagName("td")
+
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[coluna];
+
+        if (td) {
+            
+            if (td.innerHTML.toUpperCase().indexOf(Filtrar) > -1) {
+                //tr[i].style.display = ''
+            } else {
+                tr[i].style.display = 'none'
+            }
+        }
+
+    }
+
+    if (Filtrar == '') {
+        pesquisarNome();
+    }
+}
+
+
+
+document.getElementById("sexo-patientlist").addEventListener("change", pesquisarSexo)
+
+function pesquisarSexo() {
+
+    var coluna = 2 //coluna dos nomes
+
+    var Filtrar, Tabela, tr, td, th, i;
+
+    Filtrar = document.getElementById("sexo-patientlist")
+    Filtrar = Filtrar.value.toUpperCase()
+
+    Tabela = document.getElementById("tbody-patient-list")
+    tr = Tabela.getElementsByTagName("tr")
+    td = Tabela.getElementsByTagName("td")
+
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[coluna];
+
+        if (td) {
+            
+            if (td.innerHTML.toUpperCase().indexOf(Filtrar) > -1) {
+                //tr[i].style.display = ''
+            } else {
+                tr[i].style.display = 'none'
+            }
+        }
+
+    }
+
+    if (Filtrar == '') {
+        pesquisarNome();
+        pesquisarIdade();
+    }
+}
+*/
 
 
 
